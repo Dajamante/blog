@@ -49,7 +49,9 @@ const Bio = () => {
     <div
       style={{
         display: `flex`,
-        marginBottom: rhythm(2.5),
+        alignItems: "center",
+        justifyContent: "center",
+        marginBottom: rhythm(4.5),
       }}
     >
       <Image

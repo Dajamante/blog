@@ -46,21 +46,23 @@ class BlogIndex extends React.Component {
         </Layout>
 
         <footer style={{ margin: 0, textAlign: "center" }}>
-          © {new Date().getFullYear()}, Built with
+          © {new Date().getFullYear()}, Built with a lot of patience and very
+          little experience.
+          {/*
           {` `}
           <FaCoffee
             style={{ textDecoration: "none", color: "#9C563C", size: "4px" }}
           />
+          */}
           {/*
           <FontAwesomeIcon
             icon={["fas", "coffee"]}
             style={{ color: "#000000", textDecoration: "none" }}
           />
           */}
-          , patience and very little experience.
-          <div style={{ margin: auto, textAlign: "center" }}>
+          <div style={{ margin: 0, textAlign: "center" }}>
             {" "}
-            By <Bio />
+            <Bio style={{ margin: 0, textAlign: "center" }} />
           </div>
         </footer>
       </div>
