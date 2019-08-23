@@ -3,7 +3,6 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { FaCoffee } from "react-icons/fa"
 
 class NotFoundPage extends React.Component {
   render() {

@@ -1,11 +1,10 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
+import Footer from "../components/footer"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
-import { FaCoffee } from "react-icons/fa"
 
 class BlogIndex extends React.Component {
   render() {
@@ -44,27 +43,7 @@ class BlogIndex extends React.Component {
             )
           })}
         </Layout>
-
-        <footer style={{ margin: 0, textAlign: "center" }}>
-          © {new Date().getFullYear()}, Built with a lot of patience and very
-          little experience.
-          {/*
-          {` `}
-          <FaCoffee
-            style={{ textDecoration: "none", color: "#9C563C", size: "4px" }}
-          />
-          */}
-          {/*
-          <FontAwesomeIcon
-            icon={["fas", "coffee"]}
-            style={{ color: "#000000", textDecoration: "none" }}
-          />
-          */}
-          <div style={{ margin: 0, textAlign: "center" }}>
-            {" "}
-            <Bio style={{ margin: 0, textAlign: "center" }} />
-          </div>
-        </footer>
+        <Footer />
       </div>
     )
   }
