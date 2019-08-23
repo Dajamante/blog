@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import { DiscussionEmbed } from "disqus-react"
 
+import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
@@ -76,6 +77,7 @@ class BlogPostTemplate extends React.Component {
               )}
             </li>
           </ul>
+          <p>
         </nav>
         <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />{" "}
       </Layout>
