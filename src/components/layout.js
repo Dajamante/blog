@@ -1,7 +1,15 @@
 import React from "react"
 import { Link } from "gatsby"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
+import { library } from "@fortawesome/fontawesome-svg-core"
+import { faCoffee } from "@fortawesome/free-solid-svg-icons"
+import Bio from "../components/bio"
+import { FaCoffee } from "react-icons/fa"
 
 import { rhythm, scale } from "../utils/typography"
+
+library.add(faCoffee)
 
 class Layout extends React.Component {
   render() {
@@ -65,7 +73,16 @@ class Layout extends React.Component {
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <FaCoffee
+            style={{ textDecoration: "none", color: "#9C563C", size: "4px" }}
+          />
+          {/*
+          <FontAwesomeIcon
+            icon={["fas", "coffee"]}
+            style={{ color: "#000000", textDecoration: "none" }}
+          />
+          */}
+          , patience and very little experience. By <Bio />
         </footer>
       </div>
     )

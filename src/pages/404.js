@@ -1,8 +1,9 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { FaCoffee } from "react-icons/fa"
 
 class NotFoundPage extends React.Component {
   render() {
@@ -13,7 +14,17 @@ class NotFoundPage extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="404: Not Found" />
         <h1>Not Found</h1>
-        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+        <p>That doesn&#39;t exist yet!</p>
+        <h4>{data.allMarkdownRemark.totalCount} Try one of those posts! </h4>
+        {data.allMarkdownRemark.edges.map(({ node }) => (
+          <div key={node.id}>
+            <h3>
+              <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+              <span>— {node.frontmatter.date}</span>
+            </h3>
+            <p>{node.excerpt}</p>
+          </div>
+        ))}
       </Layout>
     )
   }
@@ -26,6 +37,19 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          frontmatter {
+            title
+            date(fromNow: true)
+          }
+          fields {
+            slug
+          }
+        }
       }
     }
   }

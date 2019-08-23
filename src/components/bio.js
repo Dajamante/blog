@@ -8,8 +8,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
-
 import { rhythm } from "../utils/typography"
+import { FaTwitter } from "react-icons/fa"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -32,6 +32,18 @@ const Bio = () => {
     }
   `)
 
+  class Question extends React.Component {
+    render() {
+      return (
+        <a
+          href={`https://twitter.com/${social.twitter}`}
+          style={{ textDecoration: "none", color: "#0B5890" }}
+        >
+          <FaTwitter />
+        </a>
+      )
+    }
+  }
   const { author, social } = data.site.siteMetadata
   return (
     <div
@@ -54,15 +66,11 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author}</strong> who lives and works in San
-        Francisco building useful things.
-        {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
-        </a>
+        by <strong>{author}</strong> who lives and works in Sweden <Question />.
       </p>
     </div>
   )
 }
+//https://stackoverflow.com/questions/46835145/how-to-use-icons-like-font-awesome-in-gatsby
 
 export default Bio
