@@ -70,20 +70,6 @@ class Layout extends React.Component {
       >
         <header>{header}</header>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <FaCoffee
-            style={{ textDecoration: "none", color: "#9C563C", size: "4px" }}
-          />
-          {/*
-          <FontAwesomeIcon
-            icon={["fas", "coffee"]}
-            style={{ color: "#000000", textDecoration: "none" }}
-          />
-          */}
-          , patience and very little experience. By <Bio />
-        </footer>
       </div>
     )
   }

@@ -5,6 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+import { FaCoffee } from "react-icons/fa"
 
 class BlogIndex extends React.Component {
   render() {
@@ -13,35 +14,56 @@ class BlogIndex extends React.Component {
     const posts = data.allMarkdownRemark.edges
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" />
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <article key={node.fields.slug}>
-              <header>
-                <h3
-                  style={{
-                    marginBottom: rhythm(1 / 4),
-                  }}
-                >
-                  <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                    {title}
-                  </Link>
-                </h3>
-                <small>{node.frontmatter.date}</small>
-              </header>
-              <section>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
-                  }}
-                />
-              </section>
-            </article>
-          )
-        })}
-      </Layout>
+      <div>
+        <Layout location={this.props.location} title={siteTitle}>
+          <SEO title="All posts" />
+          {posts.map(({ node }) => {
+            const title = node.frontmatter.title || node.fields.slug
+            return (
+              <article key={node.fields.slug}>
+                <header>
+                  <h3
+                    style={{
+                      marginBottom: rhythm(1 / 4),
+                    }}
+                  >
+                    <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                      {title}
+                    </Link>
+                  </h3>
+                  <small>{node.frontmatter.date}</small>
+                </header>
+                <section>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: node.frontmatter.description || node.excerpt,
+                    }}
+                  />
+                </section>
+              </article>
+            )
+          })}
+        </Layout>
+
+        <footer style={{ margin: 0, textAlign: "center" }}>
+          © {new Date().getFullYear()}, Built with
+          {` `}
+          <FaCoffee
+            style={{ textDecoration: "none", color: "#9C563C", size: "4px" }}
+          />
+          {/*
+          <FontAwesomeIcon
+            icon={["fas", "coffee"]}
+            style={{ color: "#000000", textDecoration: "none" }}
+          />
+          */}
+          , patience and very little experience.
+          <div style={{ margin: auto, textAlign: "center" }}>
+            {" "}
+            By <Bio />
+          </div>
+        </footer>
+      </div>
     )
   }
 }

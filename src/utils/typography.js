@@ -1,7 +1,7 @@
 import Typography from "typography"
-import doelgerTheme from "typography-theme-doelger"
+import moragaTheme from "typography-theme-moraga"
 
-const typography = new Typography(doelgerTheme)
+const typography = new Typography(moragaTheme)
 
 /* import Typography from "typography"
 import Wordpress2016 from "typography-theme-wordpress-2016"
