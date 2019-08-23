@@ -46,6 +46,7 @@
     "typeface-montserrat": "0.0.75",
     "typography": "^0.16.19",
     "typography-theme-doelger": "^0.16.19",
+    "typography-theme-fairy-gates": "^0.16.19",
     "typography-theme-moraga": "^0.16.19",
     "typography-theme-wordpress-2016": "^0.16.19"
   },
