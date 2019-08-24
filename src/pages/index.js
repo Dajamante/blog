@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Header from "../components/header_components/header"
 import Footer from "../components/footer"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -15,7 +14,6 @@ class BlogIndex extends React.Component {
 
     return (
       <div>
-        <Header style={{ textDecoration: `none` }} />
         <Layout location={this.props.location} title={siteTitle}>
           <SEO title="All posts" />
           {posts.map(({ node }) => {
@@ -50,7 +48,6 @@ class BlogIndex extends React.Component {
     )
   }
 }
-
 export default BlogIndex
 
 export const pageQuery = graphql`

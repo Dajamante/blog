@@ -7,7 +7,16 @@ import { GiHealthNormal } from "react-icons/gi"
 const Header = () => (
   <header className={styles.header}>
     <div className={styles[`header__wrap`]}>
-      <GiHealthNormal className={styles[`main_icon`]} />
+      <Link
+        style={{
+          boxShadow: `none`,
+          textDecoration: `none`,
+          color: `inherit`,
+        }}
+        to={`/`}
+      >
+        <GiHealthNormal className={styles[`main_icon`]} />
+      </Link>
       <nav role="main" className={styles[`header__nav`]}>
         <Link to="/app/profile" className={styles[`header__link`]}>
           Profile
