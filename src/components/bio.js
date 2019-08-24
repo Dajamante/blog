@@ -32,18 +32,6 @@ const Bio = () => {
     }
   `)
 
-  class Question extends React.Component {
-    render() {
-      return (
-        <a
-          href={`https://twitter.com/${social.twitter}`}
-          style={{ textDecoration: "none", color: "#0B5890" }}
-        >
-          <FaTwitter />
-        </a>
-      )
-    }
-  }
   const { author, social } = data.site.siteMetadata
   return (
     <div
@@ -60,6 +48,7 @@ const Bio = () => {
         style={{
           marginRight: rhythm(1 / 2),
           marginBottom: 0,
+          marginTop: 1,
           minWidth: 50,
           borderRadius: `100%`,
         }}
@@ -68,7 +57,14 @@ const Bio = () => {
         }}
       />
       <p>
-        by <strong>{author}</strong> who lives and works in Sweden <Question />.
+        by <strong>{author}</strong> who lives and works in Sweden{" "}
+        <a
+          href={`https://twitter.com/${social.twitter}`}
+          style={{ textDecoration: "none", color: "#0B5890" }}
+        >
+          <FaTwitter />
+        </a>
+        .
       </p>
     </div>
   )

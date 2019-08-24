@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import styles from "./header.module.css"
-import { FaDog } from "react-icons/fa"
 import { GoOctoface } from "react-icons/go"
 import { GiHealthNormal } from "react-icons/gi"
 
