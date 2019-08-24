@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { faCoffee } from "@fortawesome/free-solid-svg-icons"
-
+import { FaIgloo } from "react-icons/fa"
 import { rhythm, scale } from "../utils/typography"
 
 library.add(faCoffee)
@@ -51,6 +51,7 @@ class Layout extends React.Component {
             }}
             to={`/`}
           >
+            <FaIgloo /> {` `}
             {title}
           </Link>
         </h3>
