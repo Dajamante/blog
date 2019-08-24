@@ -30,7 +30,7 @@ const Header = () => (
           href="https://twitter.com/bestcataccount"
           className={styles[`header__link`]}
         >
-          <FaTwitter size={24} color="lightblue" />
+          <FaTwitter color="white" />
         </a>
         <a href="/hello-world/" className={styles[`header__link`]}>
           About this blog
