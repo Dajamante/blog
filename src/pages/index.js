@@ -15,7 +15,7 @@ class BlogIndex extends React.Component {
 
     return (
       <div>
-        <Header />
+        <Header style={{ textDecoration: `none` }} />
         <Layout location={this.props.location} title={siteTitle}>
           <SEO title="All posts" />
           {posts.map(({ node }) => {

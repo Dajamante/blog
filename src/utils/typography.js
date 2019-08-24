@@ -1,9 +1,9 @@
 import Typography from "typography"
-import fairyGatesTheme from "typography-theme-fairy-gates"
+import parnassusTheme from "typography-theme-parnassus"
 
-const typography = new Typography(fairyGatesTheme)
+const typography = new Typography(parnassusTheme)
 
-fairyGatesTheme.overrideThemeStyles = () => {
+parnassusTheme.overrideThemeStyles = () => {
   return {
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
