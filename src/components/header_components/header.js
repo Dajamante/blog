@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import styles from "./header.module.css"
 import { GoOctoface } from "react-icons/go"
 import { GiHealthNormal } from "react-icons/gi"
+import { FaTwitter } from "react-icons/fa"
 
 const Header = () => (
   <header className={styles.header}>
@@ -18,14 +19,18 @@ const Header = () => (
         <GiHealthNormal className={styles[`main_icon`]} />
       </Link>
       <nav role="main" className={styles[`header__nav`]}>
-        <Link to="/app/profile" className={styles[`header__link`]}>
-          Profile
-        </Link>
         <a
           href="https://github.com/Dajamante/"
           className={styles[`header__link`]}
         >
           <GoOctoface />
+        </a>
+        {` `}
+        <a
+          href="https://twitter.com/bestcataccount"
+          className={styles[`header__link`]}
+        >
+          <FaTwitter size={24} color="lightblue" />
         </a>
         <a href="/hello-world/" className={styles[`header__link`]}>
           About this blog

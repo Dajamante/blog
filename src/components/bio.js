@@ -57,14 +57,7 @@ const Bio = () => {
         }}
       />
       <p>
-        by <strong>{author}</strong> who lives and works in Sweden{" "}
-        <a
-          href={`https://twitter.com/${social.twitter}`}
-          style={{ textDecoration: "none", color: "#0B5890" }}
-        >
-          <FaTwitter />
-        </a>
-        .
+        by <strong>{author}</strong> who lives and works in Sweden.
       </p>
     </div>
   )
