@@ -29,6 +29,4 @@ print("bwebwebweb")
 > salted duck eggs have a briny aroma, a gelatin-like egg white and a
 > firm-textured, round yolk that is bright orange-red in color.
 
-![Chinese eggs](./salty_egg.jpg){width=100px height=100px}
-
-<img src={/salty_egg.jpg} width="100" height="100" />
+![Chinese eggs](./salty_egg.jpg){width: "100px"}
