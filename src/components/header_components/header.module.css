@@ -1,34 +1,41 @@
 .header {
-  background-color: goldenrod;
+  background-color: black;
 }
 
 .header__wrap {
   align-items: baseline;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "a b";
   margin: 0 auto;
   max-width: 640px;
   padding: 1rem 0;
 }
-
-.header__heading {
-  margin: 0;
-  font-size: 2rem;
-}
-
 .header__nav {
   font-size: 1.25rem;
   margin-top: 0;
   text-align: right;
-  text-decoration: none;
+  color: white;
+
+  text-decoration: none !important;
+}
+
+.main_icon {
+  grid-area: a;
+  text-align: left;
+  color: red;
+  transform: rotate(45deg);
+  margin: 0;
+  font-size: 2rem;
 }
 
 .header__link {
-  color: black;
+  color: white;
+  text-align: right;
   margin-left: 0.75rem;
   margin-top: 0;
   padding: 0.25rem;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .header__link:hover,
