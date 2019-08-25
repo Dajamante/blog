@@ -5,7 +5,7 @@ import Header from "../components/header_components/header"
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
+    const { children } = this.props
 
     return (
       <div>

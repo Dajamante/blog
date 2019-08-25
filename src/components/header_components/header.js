@@ -6,17 +6,16 @@ import { GiHealthNormal } from "react-icons/gi"
 import { FaTwitter } from "react-icons/fa"
 
 const Header = () => (
-  <header className={styles.header}>
+  <header className={styles.header} style={{ boxShadow: `none` }}>
     <div className={styles[`header__wrap`]}>
       <Link
         style={{
           boxShadow: `none`,
           textDecoration: `none`,
-          color: `inherit`,
         }}
         to={`/`}
       >
-        <GiHealthNormal className={styles[`main_icon`]} />
+        <GiHealthNormal className={styles[`main_icon`]} />{" "}
       </Link>
       <nav role="main" className={styles[`header__nav`]}>
         <a

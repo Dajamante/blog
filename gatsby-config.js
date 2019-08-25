@@ -3,7 +3,7 @@ const path = require("path")
 module.exports = {
   siteMetadata: {
     title: `Wrong Answer`,
-    author: `AI Maiga`,
+    author: `Aï Maiga`,
     description: `A personal blog with small programming puzzles`,
     siteUrl: `https://nifty-boxer-dog.netlify.com/`,
     social: {
