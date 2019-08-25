@@ -4,6 +4,7 @@ import styles from "./header.module.css"
 import { GoOctoface } from "react-icons/go"
 import { GiHealthNormal } from "react-icons/gi"
 import { FaTwitter } from "react-icons/fa"
+import pageQuery from "../index.js"
 
 const Header = () => (
   <header className={styles.header} style={{ boxShadow: `none` }}>
@@ -22,7 +23,7 @@ const Header = () => (
           href="https://github.com/Dajamante/"
           className={styles[`header__link`]}
         >
-          <GoOctoface />
+          <GoOctoface /> pageQuery.site.metaData.title
         </a>
         {` `}
         <a
