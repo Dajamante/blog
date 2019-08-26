@@ -11,7 +11,7 @@ class Footer extends React.Component {
           marginLeft: `auto`,
           marginRight: `auto`,
           marginTop: `auto`,
-          padding: rhythm(0.5),
+          padding: rhythm(2),
           margin: 0,
           textAlign: "center",
           backgroundColor: "black",
