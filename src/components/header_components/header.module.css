@@ -9,15 +9,18 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "a b";
   margin: 0 auto;
-  max-width: 640px;
-  padding: 1rem 0;
+  max-width: 740px;
+}
+
+.header__wrap__link {
+  text-decoration: none;
+  box-shadow: none;
 }
 .header__nav {
   font-size: 1.25rem;
   margin-top: 0;
   text-align: right;
   color: white;
-  text-decoration: none !important;
 }
 
 .main_icon {
@@ -25,8 +28,11 @@
   text-align: left;
   color: red;
   transform: rotate(45deg);
-  margin: 0;
   font-size: 2rem;
+}
+.header__title {
+  font-size: 1.5em;
+  color: white;
 }
 
 .header__link {
