@@ -20,8 +20,9 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles[`header__wrap`]}>
         <Link className={styles[`header__wrap__link`]} to={`/`}>
-          <GiHealthNormal className={styles[`main_icon`]} />{" "}
+          <GiHealthNormal className={styles[`main_icon`]} />
           <div className={styles[`header__title`]}>
+            {` `}
             {data.site.siteMetadata.title}
           </div>
         </Link>

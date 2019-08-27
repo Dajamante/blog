@@ -25,12 +25,15 @@
 
 .main_icon {
   grid-area: a;
+  display: inline-block;
+  margin-right: 10px;
   text-align: left;
   color: red;
   transform: rotate(45deg);
   font-size: 2rem;
 }
 .header__title {
+  display: inline-block;
   font-size: 1.5em;
   color: white;
 }
