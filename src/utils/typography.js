@@ -10,6 +10,13 @@ parnassusTheme.overrideThemeStyles = () => {
     },
   }
 }
+parnassusTheme.headerFontFamily = ["VT323", "monospace"]
+parnassusTheme.googleFonts = [
+  {
+    name: `VT323`,
+    styles: [],
+  },
+]
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== `production`) {

@@ -26,6 +26,7 @@
 .main_icon {
   grid-area: a;
   display: inline-block;
+  vertical-align: -15%;
   margin-right: 10px;
   text-align: left;
   color: red;
@@ -34,6 +35,7 @@
 }
 .header__title {
   display: inline-block;
+  font-family: VT323, monospace;
   font-size: 1.5em;
   color: white;
 }
