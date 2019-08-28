@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=VT323&display=swap");
+
 .header {
   color: white;
   background-color: black;
@@ -35,8 +37,10 @@
 }
 .header__title {
   display: inline-block;
-  font-family: VT323, monospace;
-  font-size: 1.5em;
+  font-family: "VT323", monospace;
+  font-size: 2em;
+  font-stretch: expanded;
+  font-weight: bold;
   color: white;
 }
 
