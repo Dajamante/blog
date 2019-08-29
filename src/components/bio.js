@@ -35,6 +35,7 @@ const Bio = () => {
         display: `flex`,
         alignItems: "center",
         justifyContent: "center",
+        marginTop: rhythm(1 / 2),
       }}
     >
       <Image
@@ -43,7 +44,6 @@ const Bio = () => {
         style={{
           marginRight: rhythm(1 / 2),
           marginBottom: 0,
-          marginTop: 1,
           minWidth: 50,
           borderRadius: `100%`,
         }}
@@ -51,8 +51,12 @@ const Bio = () => {
           borderRadius: `50%`,
         }}
       />
-      <p>
-        by <strong>{author}</strong> who lives and works in Sweden.{" "}
+      <p
+        style={{
+          marginTop: rhythm(1 / 2),
+        }}
+      >
+        <strong>{author}</strong> lives and works in Sweden.{" "}
       </p>
     </div>
   )
