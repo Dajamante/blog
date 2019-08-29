@@ -10,13 +10,8 @@ parnassusTheme.overrideThemeStyles = () => {
     },
   }
 }
-parnassusTheme.headerFontFamily = ["VT323", "monospace"]
-parnassusTheme.googleFonts = [
-  {
-    name: `VT323`,
-    styles: [],
-  },
-]
+
+//eventually replace import in header by parn.headerFontFamily?
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== `production`) {

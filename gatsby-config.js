@@ -125,12 +125,6 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    {
-      resolve: `gatsby-plugin-google-fonts`, //might need in the future
-      options: {
-        fonts: ["VT323"],
-        display: "swap",
-      },
-    },
   ],
 }
+//might use in the future `gatsby-plugin-google-fonts`

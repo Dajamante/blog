@@ -4,6 +4,7 @@ import styles from "./header.module.css"
 import { GoOctoface } from "react-icons/go"
 import { GiHealthNormal } from "react-icons/gi"
 import { FaTwitter } from "react-icons/fa"
+import { FaQuestion } from "react-icons/fa"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -41,7 +42,10 @@ const Header = () => {
             <FaTwitter color="white" />
           </a>
           <a href="/hello-world/" className={styles[`header__link`]}>
-            About this blog
+            <div className={styles[`hidden_text`]}>About this blog</div>
+            <div className={styles[`hidden_question`]}>
+              <FaQuestion />
+            </div>
           </a>
         </nav>
       </div>
