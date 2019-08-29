@@ -5,6 +5,7 @@ import { GoOctoface } from "react-icons/go"
 import { GiHealthNormal } from "react-icons/gi"
 import { FaTwitter } from "react-icons/fa"
 import { FaQuestion } from "react-icons/fa"
+import { rhythm } from "../../utils/typography"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -19,7 +20,10 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <div className={styles[`header__wrap`]}>
+      <div
+        className={styles[`header__wrap`]}
+        style={{ padding: `${rhythm(0.5)} ${rhythm(3 / 4)}` }}
+      >
         <Link className={styles[`header__wrap__link`]} to={`/`}>
           <GiHealthNormal className={styles[`main_icon`]} />
           <div className={styles[`header__title`]}>
