@@ -20,20 +20,23 @@ export default ({ data }) => (
 
       <p>
         This blog is a collection of solutions to programming problems from
-        different competitive programming websites. I struggled with most of
-        those and they taught me a lot. Painfully.
+        different competitive programming websites, mostly
+        <a href="www.kattis.com"> kattis</a>.
       </p>
 
       <p>
-        My solutions are in no way (thank goodness!) a set of best practices or
+        I struggled with most of those and they taught me a lot (painfully). My
+        solutions are in no way (thank goodness!) a set of best practices or
         best solutions. It is just a way to learn programming and have fun.
       </p>
 
       <p>
         More about me: I live in Stockholm, and some days my programming go as
-        smoothly as A&#65284;AP's routine visit to our beautiful city. My French
-        is also very good, so my dream is to make it to the National French Team
-        of Sweden (of whatever is available...){" "}
+        smoothly as A&#65284;AP's routine visit to our beautiful city.
+      </p>
+      <p>
+        My French is also very good, so my dream is to make it to the National
+        French Team of Sweden (of whatever is available...){" "}
         <span role="img" aria-label="rocket" className={styles[`emo`]}>
           {" "}
           🚀
