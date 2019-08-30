@@ -2,7 +2,7 @@
 
 h3 {
   margin-bottom: 0;
-  padding-bottom: 0;
+  padding-bottom: 2%;
 }
 h4 {
   margin-top: 1%;
@@ -17,4 +17,9 @@ h4 {
 .emo {
   font-size: 1.5rem;
   width: 100%;
+}
+
+.bio__frame {
+  border: solid;
+  border-block-color: orange;
 }

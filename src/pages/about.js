@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Bio from "../components/bio"
 import styles from "./about.module.css"
+import wrongwrongwrong from "../images/wrongwrongwrong.png"
 
 export default ({ data }) => (
   <div>
@@ -10,25 +11,30 @@ export default ({ data }) => (
       <h3>
         About those <div className={styles[`sad__word`]}>(Many many)</div>{" "}
         {data.site.siteMetadata.title}
-        <div className={styles[`sad__word`]}>(s) </div>.
+        <div className={styles[`sad__word`]}>(s) </div>...
       </h3>
-      <h4> And their author.</h4>
+      <div>
+        <img src={wrongwrongwrong} alt="Story of my life" />
+      </div>
+      <h4> ... and their author.</h4>
 
       <p>
-        This blog is a collection of programming problems that I struggled with
-        or found really fun, and problems who taught me a lot.
+        This blog is a collection of solutions to programming problems from
+        different competitive programming websites. I struggled with most of
+        those and they taught me a lot.
       </p>
 
       <p>
-        Those solutions are in no way (thank goodness!) a set of best practices.
-        It is just a way to learn programming and have fun.
+        My solutions are in no way (thank goodness!) a set of best practices or
+        best solutions. It is just a way to learn programming and have fun,
+        while being slightly traumatized in the process.
       </p>
 
       <p>
-        More about me: I live in Stockholm, and sometimes my programming go as
-        smoothly as A&#65284;AP Rocky's visit in our beautiful city. My French
+        More about me: I live in Stockholm, and some days my programming go as
+        smoothly as A&#65284;AP's standard day in our beautiful city. My French
         is also very good so my dream is to make it to the National French Team
-        of Sweden (of whatever is left...){" "}
+        of Sweden (of whatever is available...){" "}
         <span role="img" aria-label="rocket" className={styles[`emo`]}>
           {" "}
           🚀
@@ -42,7 +48,9 @@ export default ({ data }) => (
       </p>
     </Layout>
     <br />
-    <Bio />
+    <div className={styles[`bio__frame`]}>
+      <Bio />
+    </div>
   </div>
 )
 
