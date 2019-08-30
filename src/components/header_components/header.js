@@ -43,7 +43,7 @@ const Header = () => {
             href="https://twitter.com/bestcataccount"
             className={styles[`header__link`]}
           >
-            <FaTwitter color="white" />
+            <FaTwitter />
           </a>
           <Link to={`/about`} className={styles[`header__link`]}>
             <div className={styles[`hidden_text`]}>About this blog</div>
