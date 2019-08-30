@@ -24,7 +24,7 @@ const Header = () => {
         className={styles[`header__wrap`]}
         style={{ padding: `${rhythm(0.5)} ${rhythm(3 / 4)}` }}
       >
-        <Link className={styles[`header__wrap__link`]} to={`/`}>
+        <Link to={`/`} className={styles[`header__wrap__link`]}>
           <GiHealthNormal className={styles[`main_icon`]} />
           <div className={styles[`header__title`]}>
             {` `}
@@ -45,12 +45,12 @@ const Header = () => {
           >
             <FaTwitter color="white" />
           </a>
-          <a href="/hello-world/" className={styles[`header__link`]}>
+          <Link to={`/about`} className={styles[`header__link`]}>
             <div className={styles[`hidden_text`]}>About this blog</div>
             <div className={styles[`hidden_question`]}>
               <FaQuestion />
             </div>
-          </a>
+          </Link>
         </nav>
       </div>
     </header>
