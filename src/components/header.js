@@ -5,7 +5,7 @@ import { GoOctoface } from "react-icons/go"
 import { GiHealthNormal } from "react-icons/gi"
 import { FaTwitter } from "react-icons/fa"
 import { FaQuestion } from "react-icons/fa"
-import { rhythm } from "../../utils/typography"
+import { rhythm } from "../utils/typography"
 
 const Header = () => {
   const data = useStaticQuery(graphql`

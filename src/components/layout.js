@@ -1,7 +1,7 @@
 import React from "react"
 
 import { rhythm } from "../utils/typography"
-import Header from "../components/header_components/header"
+import Header from "../components/header"
 
 class Layout extends React.Component {
   render() {
