@@ -10,6 +10,12 @@ parnassusTheme.overrideThemeStyles = () => {
     },
   }
 }
+parnassusTheme.googleFonts = [
+  {
+    name: "VT323",
+    styles: ["300", "400", "500", "600", "700"],
+  },
+]
 
 //eventually replace import in header by parn.headerFontFamily?
 

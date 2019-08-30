@@ -22,9 +22,13 @@ export default ({ data }) => (
     </p>
 
     <p>
-      More about me: I live in Sweden, my French is very good, so I hope one day
-      to make it to the National French Team of Sweden (of wherever there is
-      room left...) <span className={styles[`emo`]}> 🚀</span>.
+      More about me: I live in Sweden, my French is very good. My dream is to
+      make it to the National French Team of Sweden (of whatever is left...){" "}
+      <span role="img" aria-label="rocket" className={styles[`emo`]}>
+        {" "}
+        🚀
+      </span>
+      .
     </p>
 
     <p>
