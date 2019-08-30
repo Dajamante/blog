@@ -1,5 +1,4 @@
 import React from "react"
-import Bio from "../components/bio"
 import { rhythm } from "../utils/typography"
 
 class Footer extends React.Component {
@@ -19,7 +18,7 @@ class Footer extends React.Component {
         }}
       >
         © {new Date().getFullYear()}, Built with a lot of patience and very
-        little experience. <Bio />
+        little experience.
       </div>
     )
   }
