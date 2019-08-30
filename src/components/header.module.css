@@ -28,7 +28,7 @@
 .main_icon {
   grid-area: a;
   display: inline-block;
-  vertical-align: -15%;
+  vertical-align: -10%;
   margin-right: 10px;
   text-align: left;
   color: red;

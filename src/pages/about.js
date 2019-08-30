@@ -31,7 +31,7 @@ export default ({ data }) => (
 
       <p>
         More about me: I live in Stockholm, and some days my programming go as
-        smoothly as A&#65284;AP's standard day in our beautiful city. My French
+        smoothly as A&#65284;AP's routine visit to our beautiful city. My French
         is also very good, so my dream is to make it to the National French Team
         of Sweden (of whatever is available...){" "}
         <span role="img" aria-label="rocket" className={styles[`emo`]}>
