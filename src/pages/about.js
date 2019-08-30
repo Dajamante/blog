@@ -19,11 +19,14 @@ export default ({ data }) => (
 
     <p>
       Those solutions are in no way (thank goodness!) a set of best practices.
+      It is just a way to learn programming and have fun.
     </p>
 
     <p>
-      More about me: I live in Sweden, my French is very good. My dream is to
-      make it to the National French Team of Sweden (of whatever is left...){" "}
+      More about me: I live in Stockholm, and sometimes my programming go as bad
+      as the usual night out of A&#65284;AP Rocky in our beautiful town. My
+      French is also very good so my dream is to make it to the National French
+      Team of Sweden (of whatever is left...){" "}
       <span role="img" aria-label="rocket" className={styles[`emo`]}>
         {" "}
         🚀
