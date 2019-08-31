@@ -43,6 +43,15 @@ class BlogPostTemplate extends React.Component {
             >
               {post.frontmatter.date}
             </p>
+            <p
+              style={{
+                ...scale(-1 / 5),
+                display: `block`,
+                marginBottom: rhythm(1),
+              }}
+            >
+              Category: {post.frontmatter.category}
+            </p>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
           <hr
@@ -97,11 +106,12 @@ export const pageQuery = graphql`
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
-      excerpt(pruneLength: 160)
+      excerpt(pruneLength: 100)
       html
       frontmatter {
+        category
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(fromNow: true)
         description
       }
     }
