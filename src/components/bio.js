@@ -9,6 +9,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 import { rhythm } from "../utils/typography"
+import styles from "./bio.module.css"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -22,7 +23,11 @@ const Bio = () => {
       }
       site {
         siteMetadata {
-          author
+          author {
+            firstname
+            lastname
+            nickname
+          }
         }
       }
     }
@@ -56,7 +61,16 @@ const Bio = () => {
           marginTop: rhythm(1 / 2),
         }}
       >
-        <strong>{author}</strong> lives and works in Sweden.{" "}
+        <strong>
+          {author.firstname} {` `} &#8216;
+        </strong>
+        <span className={styles[`nickname`]}> {author.nickname}</span>
+        <strong>
+          &#8217; {` `}
+          {author.lastname}
+        </strong>
+        {` `}
+        lives in Sweden with her family and studies Computer Science.
       </p>
     </div>
   )

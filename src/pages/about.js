@@ -14,7 +14,10 @@ export default ({ data }) => (
         <div className={styles[`sad__word`]}>(s) </div>...
       </h3>
       <div>
-        <img src={wrongwrongwrong} alt="Story of my life" />
+        <img
+          src={wrongwrongwrong}
+          alt="same problem submitted several times with different mistakes"
+        />
       </div>
       <h4> ... and their author.</h4>
 
