@@ -17,8 +17,8 @@ class Footer extends React.Component {
           color: "white",
         }}
       >
-        © {new Date().getFullYear()}, Built with a lot of patience and very
-        little experience.
+        © {new Date().getFullYear()}, built with much more patience than
+        experience.
       </div>
     )
   }
