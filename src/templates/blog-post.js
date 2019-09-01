@@ -51,7 +51,8 @@ class BlogPostTemplate extends React.Component {
                 marginBottom: rhythm(1),
               }}
             >
-              Category: {post.frontmatter.category}
+              Category: {post.frontmatter.category} Tags:{" "}
+              {post.frontmatter.tags}
             </p>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -111,6 +112,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         category
+        tags
         title
         date(fromNow: true)
         description
