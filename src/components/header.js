@@ -5,6 +5,7 @@ import { GoOctoface } from "react-icons/go"
 import { GiHealthNormal } from "react-icons/gi"
 import { FaTwitter } from "react-icons/fa"
 import { FaQuestion } from "react-icons/fa"
+import { FaTags } from "react-icons/fa"
 import { rhythm } from "../utils/typography"
 
 const Header = () => {
@@ -46,9 +47,15 @@ const Header = () => {
             <FaTwitter />
           </a>
           <Link to={`/about`} className={styles[`header__link`]}>
-            <div className={styles[`hidden_text`]}>About this blog</div>
+            <div className={styles[`hidden_text`]}>About</div>
             <div className={styles[`hidden_question`]}>
               <FaQuestion />
+            </div>
+          </Link>
+          <Link to={`/tags`} className={styles[`header__link`]}>
+            <div className={styles[`hidden_text`]}> Tags </div>
+            <div className={styles[`hidden_tags`]}>
+              <FaTags />
             </div>
           </Link>
         </nav>
