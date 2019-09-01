@@ -1,5 +1,7 @@
 ---
 title: Hello World
+slug: hello-world
+tags: ["gatsby", "highlight"]
 date: "2015-05-01T22:12:03.284Z"
 description: "Hello World"
 category: "nothing"
@@ -12,7 +14,7 @@ I'm sure I'll write a lot more interesting things in the future.
 Oh, and here's a great quote from this Wikipedia on
 [salted duck eggs](http://en.wikipedia.org/wiki/Salted_duck_egg).
 
-```python {1,3-5}
+```python
 # ! I use better comments!
 # ? Because, yeah?
 
@@ -24,7 +26,7 @@ def print_bwevwevwe:
             print("Bwebwebweb")
 ```
 
-```java {1,3-5}
+```java
 /* that's it!
 * ? so interesting ?
 * ! so interesting ? */
