@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Footer from "../components/footer"
 
 class NotFoundPage extends React.Component {
   render() {
@@ -10,21 +11,24 @@ class NotFoundPage extends React.Component {
     const siteTitle = data.site.siteMetadata.title
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="404: Not Found" />
-        <h1>Not Found</h1>
-        <p>That doesn&#39;t exist yet!</p>
-        <h4>{data.allMarkdownRemark.totalCount} Try one of those posts! </h4>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div key={node.id}>
-            <h3>
-              <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
-              <span>— {node.frontmatter.date}</span>
-            </h3>
-            <p>{node.excerpt}</p>
-          </div>
-        ))}
-      </Layout>
+      <div>
+        <Layout location={this.props.location} title={siteTitle}>
+          <SEO title="404: Not Found" />
+          <h1>Not Found</h1>
+          <p>That doesn&#39;t exist yet!</p>
+          <h4>{data.allMarkdownRemark.totalCount} Try one of those posts! </h4>
+          {data.allMarkdownRemark.edges.map(({ node }) => (
+            <div key={node.id}>
+              <h3>
+                <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+                <span>— {node.frontmatter.date}</span>
+              </h3>
+              <p>{node.excerpt}</p>
+            </div>
+          ))}
+        </Layout>
+        <Footer />
+      </div>
     )
   }
 }
