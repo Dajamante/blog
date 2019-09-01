@@ -1,0 +1,20 @@
+ul.tag__list {
+  display: inline-block;
+  list-style: none;
+  color: orange;
+}
+.tag__items {
+  display: inline-block;
+  list-style: none;
+  color: green;
+}
+.tags__container {
+  display: inline-block;
+  list-style: none;
+  color: blue;
+}
+div#gatsby-focus-wrapper article:nth-child(1) > header > div > ul {
+  display: inline-block;
+  list-style: none;
+  color: lightcoral;
+}

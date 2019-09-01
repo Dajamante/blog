@@ -5,6 +5,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+import styles from "./index.module.css"
 
 class BlogIndex extends React.Component {
   render() {
@@ -32,10 +33,10 @@ class BlogIndex extends React.Component {
                   </h3>
                   <small>{node.frontmatter.date}</small>
                   {node.frontmatter.tags ? (
-                    <div className="tags-container">
-                      <ul className="taglist">
+                    <div className="tags__container">
+                      <ul className="tag__list">
                         {node.frontmatter.tags.map(tag => (
-                          <li key={tag + `tag`}>
+                          <li key={tag + `tag`} className="tag__items">
                             <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
                           </li>
                         ))}
