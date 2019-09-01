@@ -1,4 +1,5 @@
 import React from "react"
+import { kebabCase } from "lodash"
 import { Link, graphql } from "gatsby"
 
 import Footer from "../components/footer"
@@ -31,6 +32,17 @@ class BlogIndex extends React.Component {
                     </Link>
                   </h3>
                   <small>{node.frontmatter.date}</small>
+                  {node.frontmatter.tags ? (
+                    <div className="tags-container">
+                      <ul className="taglist">
+                        {node.frontmatter.tags.map(tag => (
+                          <li key={tag + `tag`}>
+                            <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ) : null}
                 </header>
                 <section>
                   <p
@@ -68,6 +80,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            tags
           }
         }
       }
