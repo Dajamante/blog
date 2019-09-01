@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
+import styles from "../pages/tags.module.css"
 
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext
@@ -10,9 +11,9 @@ const Tags = ({ pageContext, data }) => {
   } tagged with "${tag}"`
   return (
     <Layout>
-      <div>
+      <div className={styles[`long__page`]}>
         <h1>{tagHeader}</h1>
-        <ul>
+        <ul className={styles[`spread__out`]}>
           {edges.map(({ node }) => {
             const { title, date } = node.frontmatter
             const { slug } = node.fields
@@ -25,7 +26,9 @@ const Tags = ({ pageContext, data }) => {
             )
           })}
         </ul>
-        <Link to="/tags">All tags</Link>
+        <div>
+          <Link to="/tags">All tags</Link>
+        </div>
       </div>
     </Layout>
   )
