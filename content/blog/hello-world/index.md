@@ -12,14 +12,34 @@ I'm sure I'll write a lot more interesting things in the future.
 Oh, and here's a great quote from this Wikipedia on
 [salted duck eggs](http://en.wikipedia.org/wiki/Salted_duck_egg).
 
-```python{1,3-5}
+```python {1,3-5}
+# ! I use better comments!
+# ? Because, yeah?
+
 print("bwebwebweb") // highlighted
-print("bwebwebweb")
-print("bwebwebweb") // highlighted
-print("bwebwebweb") // highlighted
-print("bwebwebweb") // highlighted
-print("bwebwebweb")
-print("bwebwebweb")
+
+def print_bwevwevwe:
+    print("bwebwebwebwbe")
+        for i in range(10):
+            print("Bwebwebweb")
+```
+
+```java {1,3-5}
+/* that's it!
+* ? so interesting ?
+* ! so interesting ? */
+import java.util.Scanner;
+
+//TODO: something better.
+class GetInputData
+{
+  public static void main(String args[])
+  {
+     int num;
+     float fnum;
+     String str;
+
+     Scanner in = new Scanner(System.in);
 ```
 
 > A salted duck egg is a Chinese preserved food product made by soaking duck

@@ -58,10 +58,19 @@ module.exports = {
             resolve: `gatsby-remark-vscode`,
             // All options are optional. Defaults shown here.
             options: {
-              colorTheme: "Abyss", // Read on for list of included themes. Also accepts object and function forms.
+              colorTheme: "Monokai", // Read on for list of included themes. Also accepts object and function forms.
               wrapperClassName: "pre", // Additional class put on 'pre' tag
               injectStyles: true, // Injects (minimal) additional CSS for layout and scrolling
-              extensions: [], // Extensions to download from the marketplace to provide more languages and themes
+              extensions: [
+                {
+                  identifier: "aaron-bond.better-comments",
+                  version: "2.0.5",
+                },
+                {
+                  identifier: "oderwat.indent-rainbow",
+                  version: "7.4.0",
+                },
+              ], // Extensions to download from the marketplace to provide more languages and themes
               languageAliases: {}, // Map of custom/unknown language codes to standard/known language codes
               replaceColor: x => x, // Function allowing replacement of a theme color with another. Useful for replacing hex colors with CSS variables.
               getLineClassName: ({
