@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import { kebabCase } from "lodash"
-
+import styles from "./tags.module.css"
 import Layout from "../components/layout"
 
 const TagsPage = ({ data }) => {
@@ -12,7 +12,7 @@ const TagsPage = ({ data }) => {
     <Layout>
       <div>
         <h1>Tags</h1>
-        <ul>
+        <ul className={styles[`spread__out`]}>
           {allTags.map(tag => (
             <li key={tag.fieldValue}>
               <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>

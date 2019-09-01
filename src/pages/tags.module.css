@@ -1,0 +1,7 @@
+.spread__out {
+  display: inline-block;
+  font-stretch: ultra-expanded;
+  font-family: "VT323", monospace;
+  font-size: 1.5em;
+  color: orange;
+}

@@ -11,10 +11,10 @@ class Footer extends React.Component {
           marginRight: `auto`,
           marginTop: `auto`,
           padding: rhythm(1),
-          margin: 0,
           textAlign: "center",
           backgroundColor: "black",
           color: "white",
+          bottom: 0,
         }}
       >
         © {new Date().getFullYear()}, built with much more patience than
