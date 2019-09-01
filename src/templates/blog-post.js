@@ -6,7 +6,7 @@ import { DiscussionEmbed } from "disqus-react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
-import styles from "./vscode.module.css"
+import styles from "./vs.modules.css"
 
 class BlogPostTemplate extends React.Component {
   render() {
