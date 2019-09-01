@@ -2,7 +2,6 @@ import React from "react"
 import { kebabCase } from "lodash"
 import { Link, graphql } from "gatsby"
 
-import Footer from "../components/footer"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
@@ -55,7 +54,6 @@ class BlogIndex extends React.Component {
             )
           })}
         </Layout>
-        <Footer />
       </div>
     )
   }

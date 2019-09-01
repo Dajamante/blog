@@ -21,4 +21,7 @@ h4 {
 
 .bio__frame {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 10%;
 }

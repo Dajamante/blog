@@ -51,11 +51,12 @@ export default ({ data }) => (
         {" "}
         <Link to={`/`}>Back to title </Link>
       </p>
+
+      <br />
+      <div className={styles[`bio__frame`]}>
+        <Bio />
+      </div>
     </Layout>
-    <br />
-    <div className={styles[`bio__frame`]}>
-      <Bio />
-    </div>
   </div>
 )
 

@@ -2,6 +2,7 @@ import React from "react"
 
 import { rhythm } from "../utils/typography"
 import Header from "../components/header"
+import Footer from "../components/footer"
 
 class Layout extends React.Component {
   render() {
@@ -20,6 +21,7 @@ class Layout extends React.Component {
         >
           {children}
         </main>
+        <Footer />
       </div>
     )
   }

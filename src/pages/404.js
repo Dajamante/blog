@@ -27,7 +27,6 @@ class NotFoundPage extends React.Component {
             </div>
           ))}
         </Layout>
-        <Footer />
       </div>
     )
   }
