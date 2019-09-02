@@ -1,20 +1,23 @@
-ul.tag__list {
-  display: inline-block;
-  list-style: none;
-  color: orange;
-}
-.tag__items {
-  display: inline-block;
-  list-style: none;
-  color: green;
-}
 .tags__container {
-  display: inline-block;
-  list-style: none;
-  color: blue;
+  font-size: 1.2em;
+  margin-left: 0;
+  padding-left: 0;
+  font-family: "VT323", monospace;
+  font-stretch: expanded;
+  text-decoration: none;
 }
-div#gatsby-focus-wrapper article:nth-child(1) > header > div > ul {
-  display: inline-block;
+
+.date__container {
+  display: inline;
+}
+.tag__list li {
   list-style: none;
-  color: lightcoral;
+  display: inline;
+  text-decoration: none;
+  margin-left: 2%;
+}
+
+.tag__list a {
+  color: darkorange;
+  box-shadow: none;
 }
