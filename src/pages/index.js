@@ -36,6 +36,7 @@ class BlogIndex extends React.Component {
                   </small>
                   {node.frontmatter.tags ? (
                     <div className={styles[`tags__container`]}>
+                      Tags:
                       <ul className={styles[`tag__list`]}>
                         {node.frontmatter.tags.map(tag => (
                           <li
@@ -46,7 +47,7 @@ class BlogIndex extends React.Component {
                               to={`/tags/${kebabCase(tag)}/`}
                               style={{ textDecoration: "none" }}
                             >
-                              {tag}
+                              {tag},
                             </Link>
                           </li>
                         ))}

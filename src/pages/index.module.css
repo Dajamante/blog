@@ -1,23 +1,26 @@
 .tags__container {
-  font-size: 1.2em;
+  font-size: 1.3em;
   margin-left: 0;
   padding-left: 0;
   font-family: "VT323", monospace;
-  font-stretch: expanded;
+  font-stretch: extra-expanded;
   text-decoration: none;
 }
 
 .date__container {
   display: inline;
+  margin-left: 0;
 }
 .tag__list li {
   list-style: none;
   display: inline;
   text-decoration: none;
   margin-left: 2%;
+  margin-left: 0;
 }
 
 .tag__list a {
   color: darkorange;
   box-shadow: none;
+  margin-left: 0;
 }
