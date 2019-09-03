@@ -6,7 +6,9 @@ import { DiscussionEmbed } from "disqus-react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
-import styles from "./vscode.module.css"
+import { kebabCase } from "lodash"
+// reusing styles in index
+import styles from "../pages/index.module.css"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -44,15 +46,22 @@ class BlogPostTemplate extends React.Component {
             >
               {post.frontmatter.date}
             </p>
-            <p
-              style={{
-                ...scale(-1 / 5),
-                display: `block`,
-                marginBottom: rhythm(1),
-              }}
-            >
-              Category: {post.frontmatter.category}
-            </p>
+            <div className={styles[`tags__container`]}>
+              <p>Tags:</p>
+              <ul>
+                {post.frontmatter.tags.map((tag, index) => (
+                  <li key={tag + `tag`}>
+                    <Link
+                      to={`/tags/${kebabCase(tag)}/`}
+                      style={{ textDecoration: "none" }}
+                    >
+                      #{tag}
+                      {post.frontmatter.tags.length === index + 1 ? null : ","}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
           <hr
@@ -110,7 +119,7 @@ export const pageQuery = graphql`
       excerpt(pruneLength: 100)
       html
       frontmatter {
-        category
+        tags
         title
         date(fromNow: true)
         description
