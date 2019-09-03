@@ -24,23 +24,7 @@
   text-align: right;
   color: white;
 }
-.footer__icon {
-  color: rgb(214, 211, 211);
-  font-size: 1.3rem;
-  display: inline-block;
-  text-align: right;
-  margin-left: 0.75rem;
-  margin-top: 0;
-  padding: 0.25rem;
-  box-shadow: none;
-}
 
-.footer__icon:hover,
-.footer__icon:active,
-.footer__icon:focus {
-  background: white;
-  color: black;
-}
 .main_icon {
   grid-area: a;
   display: inline-block;
@@ -65,7 +49,6 @@
 }
 .hidden_text {
   display: block;
-  color: orange;
 }
 @media (max-width: 600px) and (min-width: 201px) {
   .header__title {

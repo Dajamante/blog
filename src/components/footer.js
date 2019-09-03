@@ -2,7 +2,7 @@ import React from "react"
 import { rhythm } from "../utils/typography"
 import { GoOctoface } from "react-icons/go"
 import { FaTwitter } from "react-icons/fa"
-import styles from "./headerAndFooter.module.css"
+import styles from "./footer.module.css"
 
 class Footer extends React.Component {
   render() {

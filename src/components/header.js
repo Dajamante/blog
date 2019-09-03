@@ -6,7 +6,7 @@ import { FaTags } from "react-icons/fa"
 import { rhythm } from "../utils/typography"
 import { GoOctoface } from "react-icons/go"
 import { FaTwitter } from "react-icons/fa"
-import styles from "./headerAndFooter.module.css"
+import styles from "./header.module.css"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
