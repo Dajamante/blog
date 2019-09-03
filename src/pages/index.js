@@ -31,18 +31,13 @@ class BlogIndex extends React.Component {
                       {title}
                     </Link>
                   </h3>
-                  <small className={styles[`date__container`]}>
-                    {node.frontmatter.date}
-                  </small>
+                  <small>{node.frontmatter.date}</small>
                   {node.frontmatter.tags ? (
                     <div className={styles[`tags__container`]}>
-                      Tags:
-                      <ul className={styles[`tag__list`]}>
+                      <p>Tags:</p>
+                      <ul>
                         {node.frontmatter.tags.map((tag, index) => (
-                          <li
-                            className={styles[`tag__items`]}
-                            key={tag + `tag`}
-                          >
+                          <li key={tag + `tag`}>
                             <Link
                               to={`/tags/${kebabCase(tag)}/`}
                               style={{ textDecoration: "none" }}

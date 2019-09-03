@@ -1,17 +1,15 @@
 .tags__container {
   font-size: 1.3em;
-  margin-left: 0;
-  padding-left: 0;
   font-family: "VT323", monospace;
   font-stretch: ultra-expanded;
   text-decoration: none;
 }
 
-.date__container {
-  display: inline;
-  margin-left: 0;
+.tags__container > p {
+  float: left;
 }
-.tag__list li {
+
+.tags__container > ul > li {
   list-style: none;
   display: inline;
   text-decoration: none;
@@ -19,7 +17,7 @@
   margin-left: 0;
 }
 
-.tag__list a {
+.tags__container > ul > li > a {
   color: darkorange;
   box-shadow: none;
   margin-left: 0;
