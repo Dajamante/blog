@@ -25,8 +25,7 @@
   color: white;
 }
 .footer__icon {
-  color: rgb(214, 211, 211);
-  font-size: 1.3rem;
+  color: white;
   display: inline-block;
   text-align: right;
   margin-left: 0.75rem;
@@ -63,10 +62,7 @@
 .hidden_tags {
   display: none;
 }
-.hidden_text {
-  display: block;
-  color: orange;
-}
+
 @media (max-width: 600px) and (min-width: 201px) {
   .header__title {
     font-size: 1.7em;

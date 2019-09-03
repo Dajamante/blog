@@ -1,12 +1,12 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import styles from "./header.module.css"
-import { GoOctoface } from "react-icons/go"
 import { GiHealthNormal } from "react-icons/gi"
-import { FaTwitter } from "react-icons/fa"
 import { FaQuestion } from "react-icons/fa"
 import { FaTags } from "react-icons/fa"
 import { rhythm } from "../utils/typography"
+import { GoOctoface } from "react-icons/go"
+import { FaTwitter } from "react-icons/fa"
+import styles from "./headerAndFooter.module.css"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -33,19 +33,6 @@ const Header = () => {
           </div>
         </Link>
         <nav role="main" className={styles[`header__nav`]}>
-          <a
-            href="https://github.com/Dajamante/"
-            className={styles[`header__link`]}
-          >
-            <GoOctoface />
-          </a>
-          {` `}
-          <a
-            href="https://twitter.com/bestcataccount"
-            className={styles[`header__link`]}
-          >
-            <FaTwitter />
-          </a>
           <Link to={`/about`} className={styles[`header__link`]}>
             <div className={styles[`hidden_text`]}>About</div>
             <div className={styles[`hidden_question`]}>
