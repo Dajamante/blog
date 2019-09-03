@@ -20,9 +20,8 @@ class Footer extends React.Component {
           bottom: 0,
         }}
       >
-        © {new Date().getFullYear()}, built with much more patience than
-        experience.
-        {` `}
+        © {new Date().getFullYear()}, Gatsby + (Perseverance + Patience +
+        Perspiration )- anyExperience 😢 = ✨thisBlog ✨{` `}
         <a
           href="https://github.com/Dajamante/"
           className={styles[`footer__icon`]}
