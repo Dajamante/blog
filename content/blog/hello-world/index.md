@@ -13,14 +13,14 @@ I'm sure I'll write a lot more interesting things in the future.
 Oh, and here's a great quote from this Wikipedia on
 [salted duck eggs](http://en.wikipedia.org/wiki/Salted_duck_egg).
 
-```python {1,3-5}
+```python {4}
 # ! I use better comments!
 # ? Because, yeah?
 
 print("bwebwebweb") // highlighted
 
 def print_bwevwevwe:
-    print("bwebwebwebwbe")
+    print("bwebwebwebwbe")(highlighted)
         for i in range(10):
             print("Bwebwebweb")
 ```
