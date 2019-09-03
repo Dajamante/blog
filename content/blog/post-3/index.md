@@ -8,3 +8,19 @@ category: "test stuff"
 
 :turtle:
 :boat:
+
+```sh
+files
+```
+
+```javascript
+// In your gatsby-config.js
+plugins: [
+  {
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [`gatsby-remark-prismjs`],
+    },
+  },
+]
+```

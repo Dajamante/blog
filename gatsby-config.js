@@ -43,6 +43,36 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: false,
+              noInlineHighlight: false,
+              languageExtensions: [
+                {
+                  language: "superscript",
+                  extend: "javascript",
+                  definition: {
+                    superscript_types: /(SuperType)/,
+                  },
+                  insertBefore: {
+                    function: {
+                      superscript_keywords: /(superif|superelse)/,
+                    },
+                  },
+                },
+              ],
+              prompt: {
+                user: "root",
+                host: "localhost",
+                global: false,
+              },
+            },
+          },
+
+          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
@@ -52,37 +82,6 @@ module.exports = {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
               wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
-          },
-          {
-            resolve: `gatsby-remark-vscode`,
-            // All options are optional. Defaults shown here.
-            options: {
-              colorTheme: "Monokai", // Read on for list of included themes. Also accepts object and function forms.
-              wrapperClassName: "pre", // Additional class put on 'pre' tag
-              injectStyles: true, // Injects (minimal) additional CSS for layout and scrolling
-              extensions: [
-                {
-                  identifier: "aaron-bond.better-comments",
-                  version: "2.0.5",
-                },
-                {
-                  identifier: "oderwat.indent-rainbow",
-                  version: "7.4.0",
-                },
-              ], // Extensions to download from the marketplace to provide more languages and themes
-              languageAliases: {}, // Map of custom/unknown language codes to standard/known language codes
-              replaceColor: x => x, // Function allowing replacement of a theme color with another. Useful for replacing hex colors with CSS variables.
-              getLineClassName: ({
-                // Function allowing dynamic setting of additional class names on individual lines
-                content, //   - the string content of the line
-                index, //   - the zero-based index of the line within the code fence
-                language, //   - the language specified for the code fence
-                codeFenceOptions, //   - any options set on the code fence alongside the language (more on this later)
-              }) => "",
-              // Absolute path to the directory where extensions will be downloaded. Defaults to inside node_modules.
-              extensionDataDirectory: path.resolve("extensions"),
-              logLevel: "error", // Set to 'warn' to debug if something looks wrong
             },
           },
           {
