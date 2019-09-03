@@ -3,7 +3,7 @@
   margin-left: 0;
   padding-left: 0;
   font-family: "VT323", monospace;
-  font-stretch: extra-expanded;
+  font-stretch: ultra-expanded;
   text-decoration: none;
 }
 
@@ -15,7 +15,7 @@
   list-style: none;
   display: inline;
   text-decoration: none;
-  margin-left: 2%;
+  padding-left: 2%;
   margin-left: 0;
 }
 
