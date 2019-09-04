@@ -47,9 +47,7 @@
 .hidden_tags {
   display: none;
 }
-.hidden_text {
-  display: block;
-}
+
 @media (max-width: 600px) and (min-width: 201px) {
   .header__title {
     font-size: 1.7em;
