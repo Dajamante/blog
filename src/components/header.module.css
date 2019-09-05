@@ -88,3 +88,12 @@
   background: white;
   color: black;
 }
+/*not working for some bloody reason
+*/
+#orange__text {
+  color: orange;
+}
+
+.orange__span {
+  color: orange;
+}

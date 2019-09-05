@@ -4,8 +4,6 @@ import { GiHealthNormal } from "react-icons/gi"
 import { FaQuestion } from "react-icons/fa"
 import { FaTags } from "react-icons/fa"
 import { rhythm } from "../utils/typography"
-import { GoOctoface } from "react-icons/go"
-import { FaTwitter } from "react-icons/fa"
 import styles from "./header.module.css"
 
 const Header = () => {
@@ -34,7 +32,9 @@ const Header = () => {
         </Link>
         <nav role="main" className={styles[`header__nav`]}>
           <Link to={`/about`} className={styles[`header__link`]}>
-            <div className={styles[`hidden_text`]}>About</div>
+            <div className={styles[`hidden_text`]} id={`orange__text`}>
+              <span className={styles[`orange__span`]}>About</span>
+            </div>
             <div className={styles[`hidden_question`]}>
               <FaQuestion />
             </div>
