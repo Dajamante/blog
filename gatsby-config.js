@@ -58,29 +58,10 @@ module.exports = {
             resolve: `gatsby-remark-vscode`,
             // All options are optional. Defaults shown here.
             options: {
-              colorTheme: "Monokai", // Read on for list of included themes. Also accepts object and function forms.
-              wrapperClassName: "pre", // Additional class put on 'pre' tag
-              injectStyles: true, // Injects (minimal) additional CSS for layout and scrolling
-              extensions: [
-                {
-                  identifier: "aaron-bond.better-comments",
-                  version: "2.0.5",
-                },
-                {
-                  identifier: "oderwat.indent-rainbow",
-                  version: "7.4.0",
-                },
-              ], // Extensions to download from the marketplace to provide more languages and themes
-              languageAliases: {}, // Map of custom/unknown language codes to standard/known language codes
-              replaceColor: x => x, // Function allowing replacement of a theme color with another. Useful for replacing hex colors with CSS variables.
-              getLineClassName: ({
-                // Function allowing dynamic setting of additional class names on individual lines
-                content, //   - the string content of the line
-                index, //   - the zero-based index of the line within the code fence
-                language, //   - the language specified for the code fence
-                codeFenceOptions, //   - any options set on the code fence alongside the language (more on this later)
-              }) => "",
-              // Absolute path to the directory where extensions will be downloaded. Defaults to inside node_modules.
+              colorTheme: "Monokai",
+              wrapperClassName: "pre",
+              injectStyles: true,
+              replaceColor: x => x,
               extensionDataDirectory: path.resolve("extensions"),
               logLevel: "error", // Set to 'warn' to debug if something looks wrong
             },
@@ -88,13 +69,9 @@ module.exports = {
           {
             resolve: "gatsby-remark-emojis",
             options: {
-              // Deactivate the plugin globally (default: true)
               active: true,
-              // Add a custom css class
               class: "emoji-icon",
-              // Select the size (available size: 16, 24, 32, 64)
               size: 64,
-              // Add custom styles
               styles: {
                 display: "inline",
                 margin: "0",
@@ -112,18 +89,12 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
-      },
-    },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Wrong Answer Blog`,
+        short_name: `Wrong Answer`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
@@ -142,4 +113,3 @@ module.exports = {
     },
   ],
 }
-//might use in the future `gatsby-plugin-google-fonts`
