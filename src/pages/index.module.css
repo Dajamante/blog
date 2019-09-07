@@ -22,3 +22,47 @@
   box-shadow: none;
   margin-left: 0;
 }
+
+/*data language tags, borrowed from @gagan0723
+*/
+pre:not([data-language=""]) {
+  position: relative;
+  padding-top: 40px;
+}
+pre:not([data-language=""])::before {
+  border-radius: 0 0 6px 6px;
+  color: #000;
+  font-size: 0.8rem;
+  letter-spacing: 0.075em;
+  line-height: 1;
+  padding: 0.25rem 0.5rem;
+  position: absolute;
+  left: 1.5rem;
+  text-align: right;
+  text-transform: uppercase;
+  top: 0;
+}
+pre[data-language="c++"]::before {
+  content: "c++";
+  background: #61dafb;
+}
+pre[data-language="c"]::before {
+  content: "c";
+  background: rgb(194, 247, 114);
+}
+pre[data-language="assembler"]::before {
+  content: "assembler";
+  background: rgb(252, 219, 224);
+}
+pre[data-language="go"]::before {
+  content: "Go";
+  background: #f7df1e;
+}
+pre[data-language="java"]::before {
+  content: "java";
+  background: #a9b7c6;
+}
+pre[data-language="python"]::before {
+  content: "python";
+  background: #f6ad54;
+}
