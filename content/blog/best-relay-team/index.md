@@ -4,6 +4,7 @@ date: "2019-09-06"
 description: "Best Relay Team"
 tags: ["python", "dictionnaries", "sorting"]
 category: "Kattis"
+image: "./best_relay.jpg"
 ---
 
 ### Best Relay Team problem
@@ -11,6 +12,8 @@ category: "Kattis"
 Let's kick off the blog with [Best Relay Team](https://open.kattis.com/problems/bestrelayteam)!
 
 The blurb: you are a trainer and you have to select a relay team of four runners. But careful! Some runners are better on the first leg and some are better on following legs of the run, when warm.
+
+![Usain Bolt picture](best_relay.jpg "Usain Bolt: Picture by Fernando Frazão/Agência Brasil")
 
 So what are you going to do with this? You are offered upp to 500 people to build your dream team. My first thought was of course: this opens too many horrifying combinatorics possibilities! Do you _really_ need to match all the runners against each other?
 

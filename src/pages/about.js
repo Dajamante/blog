@@ -38,8 +38,8 @@ export default ({ data }) => (
       <p>
         It is an amazing way to learn. You are given a problem, and you must
         translate it into programming concepts and datastructures. You see
-        immediately if you understood correctly, because if not, well, it's just
-        wrong answer!
+        immediately if you understood correctly, because if not ... well, it's
+        just wrong answer!
       </p>
       <p>
         Solutions are usually very short and straightforward (I did not say

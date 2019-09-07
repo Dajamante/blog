@@ -66,6 +66,7 @@ pre[data-language="python"]::before {
   content: "python";
   background: #f6ad54;
 }
+
 .vscode-highlight {
   --vscode-highlight-line-highlighted-background-color: rgba(
     255,
@@ -80,4 +81,14 @@ pre[data-language="python"]::before {
     0.5
   ); /* default: transparent */
   --vscode-highlight-line-highlighted-border-width: 2px; /* default: 2px */
+}
+.gatsby-resp-image-figcaption {
+  text-align: center;
+}
+figcaption {
+  text-align: center;
+  font-size: small;
+}
+div#gatsby-focus-wrapper figcaption {
+  text-align: center;
 }
