@@ -9,7 +9,7 @@ module.exports = {
       lastname: `Maiga`,
       nickname: `DaJa-Q`,
     },
-    description: `A personal blog with programming puzzles`,
+    description: `Collection of programming puzzles gone wrong`,
     siteUrl: `https://wronganswer.netlify.com/`,
     social: {
       twitter: `bestcataccount`,

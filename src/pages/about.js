@@ -61,7 +61,7 @@ export default ({ data }) => (
       <p>
         I really don't regret Gatsby. It's fast, it has hot reload, and the
         community is great. Problem is:{" "}
-        <strong>the learning curve is steep. And going downwards. </strong>
+        <strong>the learning curve is steep. And downwards sometimes! </strong>
         So expect some agressive maintenance/upgrading along the ride.
       </p>
 
