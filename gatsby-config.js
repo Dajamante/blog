@@ -7,7 +7,7 @@ module.exports = {
       name: `Aï Maiga`,
       firstname: `Aï`,
       lastname: `Maiga`,
-      nickname: `DaJa-Q`,
+      nickname: `DaJa`,
     },
     description: `Collection of programming puzzles gone wrong`,
     siteUrl: `https://wronganswer.netlify.com/`,
