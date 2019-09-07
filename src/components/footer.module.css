@@ -14,7 +14,6 @@
 .footer__icon:hover,
 .footer__icon:active,
 .footer__icon:focus {
-  font-size: 1.4em;
   background: white;
   color: black;
 }
