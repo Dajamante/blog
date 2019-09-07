@@ -15,7 +15,7 @@ The blurb: you are a trainer and you have to select a relay team of four runners
 
 ![Usain Bolt picture](best_relay.jpg "Usain Bolt: Picture by Fernando Frazão/Agência Brasil")
 
-So what are you going to do with this? You are offered upp to 500 people to build your dream team. My first thought was of course: this opens too many horrifying combinatorics possibilities! Do you _really_ need to match all the runners against each other?
+So what are you going to do with this? You are offered up to 500 people to build your dream team. My first thought was of course: this opens too many horrifying combinatorics possibilities! Do you _really_ need to match all the runners against each other?
 
 But while in my insanely irritating and almost stagnant commute, I realised that ... **you don't need the slow ones!** Of course, each starting runner has to be paired with three others "warm runners". But those warm runners need to be the fastest ones, not the slugs that are slowing down the whole team!\* So listen to your inner French :fr: and put those warm snails back in the kitchen where they belong :snail: !
 
@@ -49,7 +49,7 @@ For each runner, we take the best team mates _while excluding the current runner
 
 - we start with infinite time, like my commute to work
 - we select everyone _except_ the current runner, who waits politely on the side for team mates to be selected,
-- we sort them with `sorted()`method, by `key=lambda x: x[1]`, that is to say, the second element of the dictionary (warm time)
+- we sort them with `sorted()` method, by `key=lambda x: x[1]`, that is to say, the second element of the dictionary (warm time)
 - and add the three best times to the variable team's time `teams_time`,
 
 ```python
@@ -81,7 +81,7 @@ And when the time is the best we've seen so far, make the team!
 ### Time complexity and Big-Oh notation
 
 It's still a blog on algorithms, so I should probably write something about the time complexity.
-This solution creates two dictionnaries 2 times _O(n)_, then sorts _O(n)_ and copies one of them _O(n)_... So many useless operations!
+This solution creates two dictionnaries 2 times _O(n)_, then sorts _O(n log n)_, if I remember the algorithm course correctly, and copies one of them _O(n)_... So many useless operations!
 
 **All of this is Big-nOh-nOh**. Don't do it at home.
 
@@ -114,7 +114,7 @@ def get_best_team(sorted_runners):
             dream_team = team
 ```
 
-What about Big-Oh now? We have _O(n)_ (one sorting ) + _O(n)_ (appending a team to each runner), so (maybe) _O(n)_.
+What about Big-Oh now? We have _O(n log n)_ (one sorting ) + _O(n)_ (appending a team to each runner), so (maybe) _O(n)_.
 
 Here is the whole solution. Do not hesitate to tweak it!
 

@@ -14,7 +14,10 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
-    const disqusShortname = "aimaiga"
+    /*
+    This is where you create a new site with disqus and add here.
+    */
+    const disqusShortname = "wronganswer-netlify-com"
     const disqusConfig = {
       identifier: post.id,
       title: post.frontmatter.title,

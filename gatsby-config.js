@@ -10,7 +10,7 @@ module.exports = {
       nickname: `DaJa-Q`,
     },
     description: `A personal blog with programming puzzles`,
-    siteUrl: `https://nifty-boxer-dog.netlify.com/`,
+    siteUrl: `https://wronganswer.netlify.com/`,
     social: {
       twitter: `bestcataccount`,
       facebook: `obertkollare`,
