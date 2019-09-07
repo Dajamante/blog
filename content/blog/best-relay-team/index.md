@@ -8,28 +8,30 @@ category: "Kattis"
 
 ### Best Relay Team problem
 
-Welcome! and let's kick off the blog with [Best Relay Team](https://open.kattis.com/problems/bestrelayteam) from Kattis!
+Let's kick off the blog with [Best Relay Team](https://open.kattis.com/problems/bestrelayteam)!
 
-As a trainer, you have to choose a relay team. But careful! Some runners are better on the first leg and some are better when warm!
+The blurb: you are a trainer and you have to select a relay team of four runners. But careful! Some runners are better on the first leg and some are better on following legs of the run, when warm.
 
-After thinking about this problem in my insanely long commute, I realised that: while each first-leg runner has to be paired with 3 others "warm runners", you actually do not need to look at all the runners in the team! **The warm snails will never make it to the best relay team**, so kick them out and keep them for the kitchen instead :snail: 🇫🇷!
+So what are you going to do with this? You are offered upp to 500 people to build your dream team. My first thought was of course: this opens too many horrifying combinatorics possibilities! Do you _really_ need to match all the runners against each other?
 
-Then, you can (politely) ignore the front runner and select the three fastest warm runners: either the first-leg runner is one of those (and you will need to look at the four fastest warm runners), or the first-leg runner is not one of those, so just take the three best.
+But while in my insanely irritating and almost stagnant commute, I realised that ... **you don't need the slow ones!** Of course, each starting runner has to be paired with three others "warm runners". But those warm runners need to be the fastest ones, not the snails that are slowing down the whole team!\* So listen to your inner French :fr: and put those warm snails back in the kitchen where they belong :snail: !
+
+So the solution is to pick every runner as front runner, put her/him (politely) on the side and select thereafter the three fastest warm runners.
+
+\*<small>⚠️ all accurate comparison with your humble servant's performance in her own team are hurtful to the author's feelings. </small>
 
 ### Solution based on hashtables
 
-That solution is made with Python dictionaries (hashtables). That code has a face only a mother can love, but the idea is simple.
-
-One method makes two dictionnaries: one for the "start-time" performance, one for the "warm time" performance.
+My first solution is made with Python dictionaries (hashtables). That code has a face only a mother can love, but the idea is simple.
 
 #### Method to create two dictionaries
 
-```python
-def get_start_and_warm_performance_dictionnaries(runners):
+One method makes two dictionnaries: send all the runners to a method that returns two dictionaries. One for the "start-time" performance, one for the "warm time" performance.
 
-    # ex: "BOLT 9.58 8.43"
-    # Bolt's start time lies at [i+1]
-    # and his warm time is at [i+2]
+For example, we read the line "BOLT 9.58 8.43", and make two dictionaries. One for Bolt's start time (9.58), and his warm time (8.43).
+
+```python
+def make_dictionnaries(runners):
     for i in range(0, len(runners_array), 3):
         start_times[runners_array[i]] = float(runners_array[i+1])
         warm_times[runners_array[i]] = float(runners_array[i+2])
@@ -38,51 +40,56 @@ def get_start_and_warm_performance_dictionnaries(runners):
 
 #### Method to match each first-leg with the three best second-leg
 
-Second method where the French cooking happens. For each runner, we take the best team mates _while excluding the current runner_ and compare all possible times.
+This is the method where the French cooking happens.
 
-- we start with infinite time
-- select everyone _except_ the current runner
-- sort them with `sorted()`method
-- and add the three best times to the variable team's time `teams_time`
+For each runner, we take the best team mates _while excluding the current runner_ and compare all possible times.
+
+- we start with infinite time, like my commute to work
+- we select everyone _except_ the current runner, who waits politely on the side for team mates to be selected,
+- we sort them with `sorted()`method, by `key=lambda x: x[1]`, that is to say, the second element of the dictionary (warm time)
+- and add the three best times to the variable team's time `teams_time`,
 
 ```python
 def find_best_team(start, warm):
-
-    # ... code omitted
+    ideal_time = float("inf")
+    best_start_runner = ""
+    followers = []
 
     for key in start:
-        # selecting everyone while ignoring the current runner
+        # selecting everyone while ignoring (politely) the current runner
         others = {k: v for k, v in warm.items() if k is not key}
         # sort warm times by best performance
         srtd_others = sorted(others.items(), key=lambda x: x[1])
-        # and add their times
+        # add times to the team's time
         teams_time = start[key] + srtd_others[0][1] + srtd_others[1][1]
          + srtd_others[2][1]
 ```
 
-And we make a team if the time is the best we've seen so far!
+And when the time is the best we've seen so far, make the team!
 
 ```python
         if teams_time < ideal_time:
             ideal_time = teams_time
-            best_first_leg = key
+            best_start_runner = key
             best_team = [srtd_others[0][0], srtd_others[1][0],
              srtd_others[2][0]]
-
-   # ... code omitted
 ```
 
 ### Time complexity and Big-Oh notation
 
-It's still a blog on algorithms, so I should probably write something about the time complexity. This solution creates two dictionnaries, then sort and copies one of them. **All of this is Big-nOh-nOh, so don't do it at home !**
+It's still a blog on algorithms, so I should probably write something about the time complexity.
+This solution creates two dictionnaries 2 times _O(n)_, then sorts _O(n)_ and copies one of them _O(n)_... So many useless operations!
+
+**All of this is Big-nOh-nOh**. Don't do it at home.
 
 #### Better solution:
 
 A better solution would be:
 
-- sort the runners based on their warm times `runners.sort(key=lambda x: float(x[2]))`
-- add front runner and her/his time to the team
-- for each runner, append the next three best based on warm times, as long as it is not the same person `front_runner != next_runner` and as long as the team is less than four people `len(team) < 4`
+- read each runner information in one line, name, start and warm times
+- sort the runners based on their warm times with `runners.sort(key=lambda x: float(x[2]))`,
+- add the front runner to the team instead of politely waiting on the side. The front runner is now the captain,
+- for each runner, append the next three best runners based on warm times (while not the captain `front_runner != next_runner`) and keep adding folk as long as the team is less than four people `len(team) < 4`
 - check if we have the best time and build the dream team!
 
 ```python
@@ -104,9 +111,7 @@ def get_best_team(sorted_runners):
             dream_team = team
 ```
 
-We have two loops so the solution is (probably?) _O_(n<sup>2</sup>), but we have a max of 500 runners, so it is (probably?) acceptable.
-
-### Final solution:
+What about Big-Oh now? We have _O(n)_ (one sorting ) + _O(n)_ (appending a team to each runner), so (maybe) _O(n)_.
 
 Here is the whole solution. Do not hesitate to tweak it!
 

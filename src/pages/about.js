@@ -30,10 +30,23 @@ export default ({ data }) => (
 
       <p>
         I struggled with most of those and they taught me a lot (painfully). My
-        solutions are in no way (thank goodness!) a set of best practices or
-        best solutions. Competitive programming is just a way to learn
-        programming and have fun.
+        solutions are in no way a set of best practices or best solutions (thank
+        Goodness!). Competitive programming is just a way to learn programming
+        and have fun.
       </p>
+      <h3>Why competitive programming?</h3>
+      <p>
+        It is an amazing way to learn. You are given a problem, and you must
+        translate it into programming concepts and datastructures. You see
+        immediately if you understood correctly, because if not, well, it's just
+        wrong answer!
+      </p>
+      <p>
+        Solutions are usually very short and straightforward (I did not say
+        simple!), so you don't need to design a whole program with lots of
+        classes to get things done. Just the core stuff.
+      </p>
+      <p>The kick of getting it right is the best feeling in the world!</p>
 
       <h3>About this site</h3>
       <p>
@@ -49,12 +62,7 @@ export default ({ data }) => (
         I really don't regret Gatsby. It's fast, it has hot reload, and the
         community is great. Problem is:{" "}
         <strong>the learning curve is steep. And going downwards. </strong>
-      </p>
-      <p>
-        You just had time to get css grids, but now The Cool Kids of Front
-        End&#174; {` `} do React. You just understand what a React component is,
-        but TCKoFE do Styled Components now! So expect some agressive
-        maintenance along the way.
+        So expect some agressive maintenance/upgrading along the ride.
       </p>
 
       <h3>About me</h3>
