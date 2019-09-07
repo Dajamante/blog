@@ -14,7 +14,7 @@ The blurb: you are a trainer and you have to select a relay team of four runners
 
 So what are you going to do with this? You are offered upp to 500 people to build your dream team. My first thought was of course: this opens too many horrifying combinatorics possibilities! Do you _really_ need to match all the runners against each other?
 
-But while in my insanely irritating and almost stagnant commute, I realised that ... **you don't need the slow ones!** Of course, each starting runner has to be paired with three others "warm runners". But those warm runners need to be the fastest ones, not the snails that are slowing down the whole team!\* So listen to your inner French :fr: and put those warm snails back in the kitchen where they belong :snail: !
+But while in my insanely irritating and almost stagnant commute, I realised that ... **you don't need the slow ones!** Of course, each starting runner has to be paired with three others "warm runners". But those warm runners need to be the fastest ones, not the slugs that are slowing down the whole team!\* So listen to your inner French :fr: and put those warm snails back in the kitchen where they belong :snail: !
 
 So the solution is to pick every runner as front runner, put her/him (politely) on the side and select thereafter the three fastest warm runners.
 
