@@ -1,7 +1,7 @@
 ---
 title: Best Relay Team
 date: "2019-09-06"
-description: "Best Relay Team"
+description: "The blurb: you are a trainer and you have to select a relay team of four runners. But careful! Some runners are better on the first leg and some are better on following legs of the run, when warm. How are you going to do?"
 tags: ["python", "dictionnaries", "sorting"]
 category: "Kattis"
 image: "./best_relay.jpg"
