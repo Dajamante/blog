@@ -23,6 +23,23 @@
   margin-left: 0;
 }
 
+code {
+  font-size: 0.9em;
+  color: white;
+  background: #272822;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+pre code {
+  font-size: inherit;
+  color: inherit;
+  background: inherit;
+  padding: inherit;
+  margin: inherit;
+  border-radius: inherit;
+}
 /*data language tags, borrowed from @gagan0723
 */
 pre:not([data-language=""]) {
