@@ -59,9 +59,15 @@ module.exports = {
             resolve: `gatsby-remark-vscode`,
             // All options are optional. Defaults shown here.
             options: {
-              colorTheme: "Monokai",
+              colorTheme: "Dark+ (default dark)",
               wrapperClassName: "pre",
               injectStyles: true,
+              extensions: [
+                {
+                  identifier: "taniarascia.new-moon-vscode",
+                  version: "1.8.4",
+                },
+              ],
               replaceColor: x => x,
               extensionDataDirectory: path.resolve("extensions"),
               logLevel: "error", // Set to 'warn' to debug if something looks wrong

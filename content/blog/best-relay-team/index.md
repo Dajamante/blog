@@ -90,7 +90,11 @@ This solution creates two dictionnaries 2 times _O(n)_, then sorts _O(n log n)_,
 A better solution would be:
 
 - read each runner information in one line, name, start and warm times
-- sort the runners based on their warm times with `runners.sort(key=lambda x: float(x[2]))`,
+- sort the runners based on their warm times with this line:
+  `runners.sort(key=lambda x: float(x[2]))`
+
+  ⚠️: **Don't miss the conversion to float!** (I did aaaand... :arrow_right: wrong answer:x:). Remember the input is a String. Runner's time will be sorted as string, i.e, 2 seconds will be considered bigger than 19 seconds.
+
 - add the front runner to the team instead of politely waiting on the side. The front runner is now the captain,
 - for each runner, append the next three best runners based on warm times (while not the captain `front_runner != next_runner`) and keep adding folk as long as the team is less than four people `len(team) < 4`
 - check if we have the best time and build the dream team!
@@ -99,16 +103,13 @@ A better solution would be:
 def get_best_team(sorted_runners):
     best_time = float("inf")
     best_team = []
-
     for front_runner, start, warm in sorted_runners:
         running_time = float(start)
         team = [front_runner]
-
         for next_runner, start2, warm2 in sorted_runners:
             if (front_runner != next_runner) and len(team) < 4:
                 running_time += float(warm2)
                 team.append(next_runner)
-
         if running_time < best_time:
             best_time = running_time
             dream_team = team
@@ -122,32 +123,23 @@ Here is the whole solution. Do not hesitate to tweak it!
 def get_best_team(sorted_runners):
     best_time = float("inf")
     dream_team = []
-
     for front_runner, start, warm in sorted_runners:
-
         running_time = float(start)
         team = [front_runner]
-
         for next_runner, start2, warm2 in sorted_runners:
             if (front_runner != next_runner) and len(team) < 4:
                 running_time += float(warm2)
                 team.append(next_runner)
-
         if running_time < best_time:
             best_time = running_time
             dream_team = team
-
     print(best_time)
     print('\n'.join(dream_team))
 
-
 number_of_lines = int(input())
 runners = []
-
 for i in range(number_of_lines):
     runners.append(input().split())
-
 runners.sort(key=lambda x: float(x[2]))
-
 get_best_team(runners)
 ```

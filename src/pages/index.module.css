@@ -39,6 +39,8 @@ pre code {
   padding: inherit;
   margin: inherit;
   border-radius: inherit;
+  margin-bottom: 0;
+  padding-bottom: 10px;
 }
 /*data language tags, borrowed from @gagan0723
 */
@@ -46,6 +48,7 @@ pre:not([data-language=""]) {
   position: relative;
   padding-top: 20px;
 }
+
 pre:not([data-language=""])::before {
   border-radius: 0 0 6px 6px;
   color: #000;
@@ -84,21 +87,6 @@ pre[data-language="python"]::before {
   background: #f6ad54;
 }
 
-.vscode-highlight {
-  --vscode-highlight-line-highlighted-background-color: rgba(
-    255,
-    255,
-    255,
-    0.2
-  ); /* default: transparent */
-  --vscode-highlight-line-highlighted-border-color: rgba(
-    255,
-    255,
-    255,
-    0.5
-  ); /* default: transparent */
-  --vscode-highlight-line-highlighted-border-width: 2px; /* default: 2px */
-}
 .gatsby-resp-image-figcaption {
   text-align: center;
 }
@@ -108,19 +96,4 @@ figcaption {
 }
 div#gatsby-focus-wrapper figcaption {
   text-align: center;
-}
-
-.vscode-highlight {
-  --vscode-highlight-padding-v: 1rem;
-  --vscode-highlight-padding-h: 1.5rem;
-  --vscode-highlight-padding-top: var(--vscode-highlight-padding-v);
-  --vscode-highlight-padding-right: var(--vscode-highlight-padding-h);
-  --vscode-highlight-padding-bottom: var(--vscode-highlight-padding-v);
-  --vscode-highlight-padding-left: var(--vscode-highlight-padding-h);
-  --vscode-highlight-border-radius: 8px;
-
-  /* Line highlighting: see next section */
-  --vscode-highlight-line-highlighted-background-color: transparent;
-  --vscode-highlight-line-highlighted-border-width: 4px;
-  --vscode-highlight-line-highlighted-border-color: transparent;
 }
