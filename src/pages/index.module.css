@@ -44,7 +44,7 @@ pre code {
 */
 pre:not([data-language=""]) {
   position: relative;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 pre:not([data-language=""])::before {
   border-radius: 0 0 6px 6px;
