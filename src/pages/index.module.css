@@ -97,3 +97,13 @@ figcaption {
 div#gatsby-focus-wrapper figcaption {
   text-align: center;
 }
+
+pre code span.mtk3 {
+  color: orange;
+}
+div#gatsby-focus-wrapper span.mtk3 {
+  color: orange;
+}
+.dark-default-dark .mtk3 {
+  color: orange;
+}
