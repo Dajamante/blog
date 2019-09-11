@@ -62,12 +62,7 @@ module.exports = {
               colorTheme: "Dark+ (default dark)",
               wrapperClassName: "pre",
               injectStyles: true,
-              extensions: [
-                {
-                  identifier: "taniarascia.new-moon-vscode",
-                  version: "1.8.4",
-                },
-              ],
+              extensions: [],
               replaceColor: x => x,
               extensionDataDirectory: path.resolve("extensions"),
               logLevel: "error", // Set to 'warn' to debug if something looks wrong

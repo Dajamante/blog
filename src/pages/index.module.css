@@ -66,6 +66,10 @@ pre[data-language="c++"]::before {
   content: "c++";
   background: #61dafb;
 }
+pre[data-language="cpp"]::before {
+  content: "cpp";
+  background: #61dafb;
+}
 pre[data-language="c"]::before {
   content: "c";
   background: rgb(194, 247, 114);
@@ -106,4 +110,10 @@ div#gatsby-focus-wrapper span.mtk3 {
 }
 .dark-default-dark .mtk3 {
   color: orange;
+}
+blockquote > blockquote {
+  font-size: small;
+  border-left: none;
+  padding-left: 0;
+  padding-right: 0;
 }
