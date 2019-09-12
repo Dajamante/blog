@@ -100,4 +100,4 @@ Well, what does it say? Here, page 54:
 
 > The operations of a deque also work in _O(1)_ average time. However, deques have larger constant factors than vectors, so deques should be used only if ther is a need to manipulate both ends.
 
-My analysis: So _O(1), \_n_ times. I guess it's ok. I wish I knew what a constant factor was though.
+My analysis: So _O_(1), \*, n times. I guess it's ok. I wish I knew what a constant factor was though.
