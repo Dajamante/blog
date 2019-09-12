@@ -11,7 +11,7 @@ image: ./cards.gif
 
 Today's challenge is [Card Trick](https://open.kattis.com/problems/cardtrick2)!
 
-The trick is:
+**The trick is:**
 
 1. move _one_ card at the bottom of the deque, reveal the next one. It's an **Ace**! :clap:
 2. Discard the Ace, move _the next two cards_ one at a time at the bottom of the deque, and the next card you turn is ... a **2**! :clap: :clap:
@@ -102,5 +102,5 @@ I wish I knew what a constant factor was.
 
 But hey. It works.
 
-<center><img src="/cards.gif" alt="cards deal with it"
+<center><img src="/cards.gif" alt="cards deck saying deal with it"
 	title="A cute deck card" width="250" height="250" /></center>

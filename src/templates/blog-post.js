@@ -9,6 +9,8 @@ import { kebabCase } from "lodash"
 // and importing code highlighting
 import styles from "../pages/index.module.css"
 
+import "katex/dist/katex.min.css"
+
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
