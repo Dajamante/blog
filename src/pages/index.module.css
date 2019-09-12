@@ -66,10 +66,7 @@ pre[data-language="c++"]::before {
   content: "c++";
   background: #61dafb;
 }
-pre[data-language="cpp"]::before {
-  content: "cpp";
-  background: #61dafb;
-}
+
 pre[data-language="c"]::before {
   content: "c";
   background: rgb(194, 247, 114);

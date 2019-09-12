@@ -4,18 +4,18 @@ date: "2019-09-11"
 description: "The blurb: you are a magician trying to impress the room with this amazing card trick. But also program it. Help!"
 tags: ["c++", "deque", "sorting", "coach", "laaksonen"]
 category: "Kattis"
-image: ["./best_relay.jpg", "./gatsby-icon.png"]
+image: ./cards.gif
 ---
 
 ### The card trick problem
 
-Today's challenge is [Card Trick](https://open.kattis.com/problems/cardtrick2) :spades::hearts::diamonds: :clubs:!
+Today's challenge is [Card Trick](https://open.kattis.com/problems/cardtrick2)!
 
 The trick is:
 
-1. move _one_ card :spades: at the bottom of the deque, reveal the next one. It's an **Ace**! :clap:
-2. Discard the Ace, move _the next two cards_ :hearts: :clubs: one at a time at the bottom of the deque, and the next card you turn is a **2**! :clap: :clap:
-3. Discard the 2, and again, move three cards :diamonds::hearts::spades:one at a time at the bottom of the deque, and the next is -unbelievably!- a **3**! :clap: :clap: :clap:
+1. move _one_ card at the bottom of the deque, reveal the next one. It's an **Ace**! :clap:
+2. Discard the Ace, move _the next two cards_ one at a time at the bottom of the deque, and the next card you turn is ... a **2**! :clap: :clap:
+3. Discard the 2, and again, move three cards :one at a time at the bottom of the deque, and the next is -unbelievably!- ... a **3**! :clap: :clap: :clap:
 4. ... and so on and so forth, in front of your enraptured public.
 
 Yes, it is what you think it is: the amateur illusionist can write a program that will allow her to arrange the card, and have it right anytime.
@@ -88,16 +88,19 @@ int main() {
 
 ### Time complexity
 
-Is this a Big-noh-noh solution? I did not know, so I checked what my _much loved_ and _much misunderstood_ Guide to competitive programming had to say:
+Is this a Big-noh-noh solution?
 
-![Guide to competitive programming](book.jpg "Guide to Competitive Programming by Antti laaksonen")
+I checked what my much loved and much misunderstood [_Guide to competitive programming_](https://www.springer.com/us/book/9783319725468) had to say:
 
-also known as:
-
-![Guide to competitive programming](book2.jpg "And how I feel about this much loved classic.")
-
-Well, what does it say? Here, page 54:
+Here, page 54:
 
 > The operations of a deque also work in _O(1)_ average time. However, deques have larger constant factors than vectors, so deques should be used only if ther is a need to manipulate both ends.
 
-My analysis: So _O_(1), \*, n times. I guess it's ok. I wish I knew what a constant factor was though.
+My analysis: So _O(1)_ \* n = _O(n)_. I guess it's ok.
+
+I wish I knew what a constant factor was.
+
+But hey. It works.
+
+<center><img src="/cards.gif" alt="cards deal with it"
+	title="A cute deck card" width="250" height="250" /></center>
