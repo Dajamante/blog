@@ -52,7 +52,7 @@ The problem gives us only one number, which is the biggest card. Let's take it f
 
 A few days ago, I read that quote from Wittgenstein in the Pragmatic Programmer, so I decided to rewrite the code in c++. Here it is!
 
-```c++
+```cpp
 #include <iostream>
 #include <deque>
 

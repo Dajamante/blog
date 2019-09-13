@@ -30,6 +30,7 @@ code {
   padding: 5px;
   margin: 5px;
   border-radius: 10px;
+  line-height: 1.5rem;
 }
 
 pre code {
@@ -62,7 +63,7 @@ pre:not([data-language=""])::before {
   text-transform: uppercase;
   top: 0;
 }
-pre[data-language="c++"]::before {
+pre[data-language="cpp"]::before {
   content: "c++";
   background: #61dafb;
 }
@@ -95,9 +96,6 @@ figcaption {
   text-align: center;
   font-size: small;
 }
-div#gatsby-focus-wrapper figcaption {
-  text-align: center;
-}
 
 pre code span.mtk3 {
   color: orange;
@@ -108,9 +106,28 @@ div#gatsby-focus-wrapper span.mtk3 {
 .dark-default-dark .mtk3 {
   color: orange;
 }
+
 blockquote > blockquote {
   font-size: small;
   border-left: none;
   padding-left: 0;
   padding-right: 0;
+}
+.vscode-highlight-code .vscode-highlight-line span.mtk3 {
+  color: blue;
+}
+div#gatsby-focus-wrapper span > span.mtk3 {
+  color: blue;
+}
+
+.mtk3 {
+  color: blue;
+}
+
+span > .mtk3 {
+  color: blue;
+}
+
+.dark-default-dark .vscode-highlight-code .vscode-highlight-line span.mtk3 {
+  color: blue;
 }
