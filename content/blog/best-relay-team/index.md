@@ -58,14 +58,14 @@ def find_best_team(start, warm):
     best_start_runner = ""
     followers = []
 
-    for key in start:
+    for key in start: // highlight-line
         # selecting everyone while ignoring (politely) the current runner
         others = {k: v for k, v in warm.items() if k is not key}
         # sort warm times by best performance
         srtd_others = sorted(others.items(), key=lambda x: x[1])
         # add times to the team's time
         teams_time = start[key] + srtd_others[0][1] + srtd_others[1][1]
-         + srtd_others[2][1]
+         + srtd_others[2][1] // highlight-line
 ```
 
 And when the time is the best we've seen so far, make the team!
