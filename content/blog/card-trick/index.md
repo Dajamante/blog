@@ -96,11 +96,9 @@ Here, page 54:
 
 > The operations of a deque also work in _O(1)_ average time. However, deques have larger constant factors than vectors, so deques should be used only if ther is a need to manipulate both ends.
 
-My analysis: So _O(1)_ \* n = _O(n)_. I guess it's ok.
+My analysis: So _O(1)_ \* n = _O(n)_. Sounds ok to me!
 
-I wish I knew what a constant factor was.
-
-But hey. It works.
+It works. We'll investigate the "constant factors" another time.
 
 <center><img src="/cards.gif" alt="cards deck saying deal with it"
 	title="A cute deck card" width="250" height="250" /></center>
