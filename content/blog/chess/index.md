@@ -100,6 +100,8 @@ $$x  = \displaystyle\frac{(y_2+x_2)-(y_1+x_1)}{2}$$
 
 $$ y = x+(y_1 - x_1)$$
 
+In code, that would be:
+
 ```cpp
 int x = ((y1 + x1) - (y2 - x2)) / 2;
 int y = x + (y2 - x2);
