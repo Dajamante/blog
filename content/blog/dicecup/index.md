@@ -66,9 +66,9 @@ public class Main {
 
 #### Try it yourself!
 
-And here comes the "Try it yourself" embedded code nobody asked for:
+And here comes the "Try it yourself" embedded code nobody asked for. Push :arrow_forward: and wait a bit.
 
-<iframe height="400px" width="100%" src="https://repl.it/@Dajamante/Rolling-Dice?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="false" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+<iframe height="400px" width="100%" src="https://repl.it/@Dajamante/Rolling-Dice?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
 ### Probabilistic solution
 

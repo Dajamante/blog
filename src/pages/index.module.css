@@ -131,3 +131,26 @@ span > .mtk3 {
 .dark-default-dark .vscode-highlight-code .vscode-highlight-line span.mtk3 {
   color: blue;
 }
+.centered_image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  float: none !important;
+}
+/*https://stackoverflow.com/questions/255170/markdown-and-image-alignment
+*/
+img[alt$="><"] {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  float: none !important;
+}
+img[src*="#center"] {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  float: none !important;
+}

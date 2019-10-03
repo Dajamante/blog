@@ -15,7 +15,7 @@ class Layout extends React.Component {
           style={{
             marginLeft: `auto`,
             marginRight: `auto`,
-            maxWidth: rhythm(24),
+            maxWidth: rhythm(26),
             padding: `${rhythm(0)} ${rhythm(3 / 4)}`, //first seems to be margin, second padding?
             // push the footer at bottom
             minHeight: `100vh`,
