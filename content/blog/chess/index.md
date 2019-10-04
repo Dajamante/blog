@@ -28,9 +28,9 @@ One image is worth a thousand words, and definitely 32 678 (signed) math theorem
 
 And one gif is probably worth a thousand images.
 
-Here comes a proof at the power of\*<small>⚠️</small>: $$1000 \times 1000 \times 32675 = 32 675 000 0000$$
+Here comes a proof at the power of <small>⚠️</small>: $$1000 \times 1000 \times 32675 = 32 675 000 0000$$
 
-\*<small>⚠️ Yes. It's call a proof by exageration. Or intimidation.</small>
+<small>⚠️ Yes. It's call a proof by exageration.</small>
 
 `youtube: https://youtu.be/NOcga2qKKNU`
 
@@ -44,7 +44,7 @@ Four things dear friends.
  if (x1 == x2 && y1 == y2)
 ```
 
-2. We need to check wether they are on the same diagonal. How? Easy! We read the coordinates of the Bishop and its destination, we normalise the columns with $$A=0, B=1, C=2...$$ and the columns by substracting one to every row(that is, 1 is now zero, 2 is one)... and calculate the slope. Note that the slope is calculated by comparing absolute values and not $$\displaystyle\frac{y1 - y2}{x1 - x2}$$.
+2. We need to check wether they are on the same diagonal. How? Easy! We read the coordinates of the Bishop and its destination, we normalise the columns with $$A=0, B=1, C=2...$$ and the columns by substracting one to every row(that is, 1 is now zero, 2 is one)... and calculate the slope. Note that the slope is calculated by comparing absolute values and not $$\displaystyle\frac{y_2 - y_1}{x_2 - x_1}$$.
 
 This is to avoid the infamous division by zero, if the input coordinates happened to be the same!
 
@@ -59,7 +59,9 @@ Is the slope one or minus one? Bingo. They are on the same diagonal.
    ![Same color test](evenodd.png)
 
 Example: A 1 will be $$0 + 0 = 0$$.
+
 C 3 will be $$2 + 2 = 4$$.
+
 Both are even, and we can conclude A 1 can reach C 3.
 What about C 7 ? Well, it will be $$2 + 6 = 8$$, also even!
 
