@@ -12,8 +12,7 @@ module.exports = {
     description: `Collection of programming puzzles gone wrong`,
     siteUrl: `https://wronganswer.netlify.com/`,
     social: {
-      twitter: `bestcataccount`,
-      facebook: `obertkollare`,
+      twitter: `ai_maiga`,
     },
   },
   plugins: [

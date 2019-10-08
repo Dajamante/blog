@@ -41,7 +41,7 @@ class Footer extends React.Component {
         </a>
         {` `}
         <a
-          href="https://twitter.com/bestcataccount"
+          href="https://twitter.com/ai_maiga"
           className={styles[`footer__icon`]}
         >
           <FaTwitter />
