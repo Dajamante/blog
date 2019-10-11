@@ -8,17 +8,19 @@ import wrongwrongwrong from "../images/wrongwrongwrong.png"
 export default ({ data }) => (
   <div>
     <Layout>
-      <h3>
-        About those <div className={styles[`sad__word`]}>(many, MANY)</div>{" "}
-        {data.site.siteMetadata.title}
-        <div className={styles[`sad__word`]}>(s) </div>...
-      </h3>
       <div>
+        <h3>
+          About those <div className={styles[`sad__word`]}>(many, MANY)</div>{" "}
+          {data.site.siteMetadata.title}
+          <div className={styles[`sad__word`]}>(s) </div>...
+        </h3>
         <img
+          className={styles[`centered_image_with_table`]}
           src={wrongwrongwrong}
           alt="Same problem submitted several times with different mistakes"
         />
       </div>
+
       <h4> ... and their author.</h4>
 
       <h3>What is that all about?</h3>

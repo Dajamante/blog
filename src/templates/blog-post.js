@@ -8,7 +8,6 @@ import { kebabCase } from "lodash"
 // reusing styles in index
 // and importing code highlighting
 import styles from "../pages/index.module.css"
-
 import "katex/dist/katex.min.css"
 
 class BlogPostTemplate extends React.Component {

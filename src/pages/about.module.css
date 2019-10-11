@@ -25,3 +25,12 @@ h4 {
   padding-right: 10%;
   margin-bottom: 10%;
 }
+
+.centered_image_with_table {
+  margin-top: 3%;
+  margin-bottom: 8%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
