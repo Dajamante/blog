@@ -94,3 +94,13 @@ export const pageQuery = graphql`
     }
   }
 `
+/*SORT AWAY UNWANTED POSTS
+ allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { tags: { ne: "java" } } }
+
+      OR
+
+      filter: { frontmatter: { tags: { eq: "java" } } }
+    )
+*/
