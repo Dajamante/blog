@@ -44,7 +44,8 @@
 }
 
 .hidden_question,
-.hidden_tags {
+.hidden_tags,
+.hidden_python {
   display: none;
 }
 
@@ -64,6 +65,11 @@
   .hidden_question {
     display: block;
     color: orange;
+  }
+
+  .hidden_python {
+    display: block;
+    color: pink;
   }
 
   .hidden_tags {

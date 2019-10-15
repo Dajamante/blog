@@ -3,6 +3,7 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import { GiHealthNormal } from "react-icons/gi"
 import { FaQuestion } from "react-icons/fa"
 import { FaTags } from "react-icons/fa"
+import { FaPython } from "react-icons/fa"
 import { rhythm } from "../utils/typography"
 import styles from "./header.module.css"
 
@@ -43,6 +44,12 @@ const Header = () => {
             <div className={styles[`hidden_text`]}> Tags </div>
             <div className={styles[`hidden_tags`]}>
               <FaTags />
+            </div>
+          </Link>
+          <Link to={`/index_tellus`} className={styles[`header__link`]}>
+            <div className={styles[`hidden_text`]}> Tellus </div>
+            <div className={styles[`hidden_python`]}>
+              <FaPython />
             </div>
           </Link>
         </nav>

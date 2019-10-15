@@ -11,7 +11,7 @@ const TagsPage = ({ data }) => {
   return (
     <Layout>
       <div>
-        <h1>Tags</h1>
+        <h2>Tags</h2>
         <ul className={styles[`spread__out`]}>
           {allTags.map(tag => (
             <li key={tag.fieldValue}>
