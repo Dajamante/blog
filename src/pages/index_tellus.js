@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import styles from "./about.module.css"
-import wrongwrongwrong from "../images/wrongwrongwrong.png"
+import tellus_host from "../images/tellus_host.jpg"
 
 export default ({ data }) => (
   <div>
@@ -11,8 +11,8 @@ export default ({ data }) => (
         <h3>Tellus Kodare</h3>
         <img
           className={styles[`centered_image_with_table`]}
-          src={wrongwrongwrong}
-          alt="Same problem submitted several times with different mistakes"
+          src={tellus_host}
+          alt="Autumn tree with golden colors"
         />
       </div>
 
@@ -21,13 +21,13 @@ export default ({ data }) => (
         respektive datum!
       </p>
 
-      <h4>{data.allMarkdownRemark.totalCount} Posts about Tellus Kodare </h4>
+      <h4>{data.allMarkdownRemark.totalCount} Tellus Kodare aktiviteter</h4>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id}>
           <Link to={node.fields.slug}>
-            <h3>
+            <h4>
               {node.frontmatter.title} - {node.frontmatter.date}
-            </h3>
+            </h4>
           </Link>
         </div>
       ))}
