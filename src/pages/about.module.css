@@ -14,6 +14,14 @@ h4 {
   color: orange;
 }
 
+.tellus__titel {
+  display: inline-block;
+  font-family: "VT323", monospace;
+  font-size: 2em;
+  font-stretch: ultra-expanded;
+  color: orange;
+}
+
 .emo {
   font-size: 1.2rem;
   width: 100%;

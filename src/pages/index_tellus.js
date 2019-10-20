@@ -8,7 +8,9 @@ export default ({ data }) => (
   <div>
     <Layout>
       <div>
-        <h3>Tellus Kodare</h3>
+        <h3 className={styles[`tellus__titel`]}>
+          Tellus Kodare - Programmeringklubb
+        </h3>
         <img
           className={styles[`centered_image_with_table`]}
           src={tellus_host}
@@ -25,9 +27,9 @@ export default ({ data }) => (
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id}>
           <Link to={node.fields.slug}>
-            <h4>
+            <p>
               {node.frontmatter.title} - {node.frontmatter.date}
-            </h4>
+            </p>
           </Link>
         </div>
       ))}

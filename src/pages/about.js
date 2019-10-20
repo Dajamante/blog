@@ -49,7 +49,13 @@ export default ({ data }) => (
         classes to get things done. Just the core stuff.
       </p>
       <p>The kick of getting it right is the best feeling in the world!</p>
+      <h3>... And what is Tellus?</h3>
 
+      <p>
+        Tellus is a programming club in Midsommarkransen that I started in
+        September 2019. We learn to code in Python.
+        <Link to={`/index_tellus`}> Check our activities here!</Link>
+      </p>
       <h3>About this site</h3>
       <p>
         This blog is made with Gatsby. I wanted something fast, minimal and
