@@ -2,6 +2,8 @@ import React from "react"
 import { rhythm } from "../utils/typography"
 import { GoOctoface } from "react-icons/go"
 import { FaTwitter } from "react-icons/fa"
+import { FaEnvelope } from "react-icons/fa"
+import { FaEquals } from "react-icons/fa"
 import styles from "./footer.module.css"
 
 class Footer extends React.Component {
@@ -20,11 +22,12 @@ class Footer extends React.Component {
           bottom: 0,
         }}
       >
-        © {new Date().getFullYear()}, Gatsby + Perseverance - anyExperience{" "}
+        © {new Date().getFullYear()}, (Gatsby + Perseverance - anyExperience{" "}
         <span role="img" aria-label="sad">
           😢
         </span>{" "}
-        ={" "}
+        )&nbsp;
+        <FaEquals /> &nbsp;
         <span role="img" aria-label="sparkle">
           ✨
         </span>
@@ -32,6 +35,7 @@ class Footer extends React.Component {
         <span role="img" aria-label="sparkle">
           ✨
         </span>
+        &nbsp; &nbsp;
         {` `}
         <a
           href="https://github.com/Dajamante/"
@@ -45,6 +49,10 @@ class Footer extends React.Component {
           className={styles[`footer__icon`]}
         >
           <FaTwitter />
+        </a>
+        <a href="mailto:aimaiga2@gmail.com" className={styles[`footer__icon`]}>
+          {" "}
+          <FaEnvelope />
         </a>
       </div>
     )

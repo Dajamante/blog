@@ -22,7 +22,7 @@ const Header = () => {
     <header className={styles.header}>
       <div
         className={styles[`header__wrap`]}
-        style={{ padding: `${rhythm(0.5)} ${rhythm(3 / 4)}` }}
+        style={{ padding: `${rhythm(0.5)} ${rhythm(1.5 / 4)}` }}
       >
         <Link to={`/`} className={styles[`header__wrap__link`]}>
           <GiHealthNormal className={styles[`main_icon`]} />
@@ -47,7 +47,10 @@ const Header = () => {
             </div>
           </Link>
           <Link to={`/index_tellus`} className={styles[`header__link`]}>
-            <div className={styles[`hidden_text`]}> Tellus </div>
+            <div className={`${styles.hidden_text} ${styles.sparkling_tellus}`}>
+              {" "}
+              Tellus{" "}
+            </div>
             <div className={styles[`hidden_python`]}>
               <FaPython />
             </div>
