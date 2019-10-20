@@ -51,7 +51,9 @@ const Header = () => {
               {" "}
               Tellus{" "}
             </div>
-            <div className={styles[`hidden_python`]}>
+            <div
+              className={`${styles.hidden_python} ${styles.sparkling_tellus}`}
+            >
               <FaPython />
             </div>
           </Link>

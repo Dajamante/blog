@@ -49,7 +49,17 @@ export default ({ data }) => (
         classes to get things done. Just the core stuff.
       </p>
       <p>The kick of getting it right is the best feeling in the world!</p>
-      <h3>... And what is Tellus?</h3>
+      <h3>
+        ... And what is Tellus?
+        {` `}{" "}
+        <span role="img" aria-label="girl" className={styles[`emo`]}>
+          👧
+        </span>{" "}
+        {` `}
+        <span role="img" aria-label="computer" className={styles[`emo`]}>
+          💻
+        </span>
+      </h3>
 
       <p>
         Tellus is a programming club in Midsommarkransen that I started in
