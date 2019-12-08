@@ -10,11 +10,11 @@ category: "Tellus"
 
 Först ska vi träna på att skapa ett hus, och försöka förstå alla funktioner som används!
 
-<iframe src="https://trinket.io/embed/python/e1636732b1" width="110%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.io/embed/python/e1636732b1" width="120%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 ### Snöflingor
 
-<iframe src="https://trinket.io/embed/python/95da46fdeb" width="110%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-
-Undrar du på vilka färger få turtles ha?
+Undrar du vilka fler färger få turtles ha?
 [Kolla hit!](https://trinket.io/docs/colors)
+
+<iframe src="https://trinket.io/embed/python/95da46fdeb" width="120%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>

@@ -53,7 +53,7 @@ export default ({ data }) => (
       ))}
       <p>
         {" "}
-        <Link to={`/`}>Back to title </Link>
+        <Link to={`/`}>Tillbaka </Link>
       </p>
 
       <br />
