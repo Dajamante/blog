@@ -2,15 +2,14 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import styles from "./about.module.css"
-import tellus_host from "../images/tellus_host.jpg"
+import edit_kerstin from "../images/editetkerstin.jpg"
+import everyone from "../images/ttlemonde.jpg"
 
 export default ({ data }) => (
   <div>
     <Layout>
       <div>
-        <h3 className={styles[`tellus__titel`]}>
-          Tellus Kodare - Programmeringklubb
-        </h3>
+        <h3 className={styles[`tellus__titel`]}>Tellus Programmeringklubb</h3>
         <p>
           Tellus is a programming club for girls (and their moms) that I started
           in September 2019. All the information below is in Swedish!
@@ -19,16 +18,29 @@ export default ({ data }) => (
             🇸🇪
           </span>
         </p>
-        <img
-          className={styles[`centered_image_with_table`]}
-          src={tellus_host}
-          alt="Autumn tree with golden colors"
-        />
+
+        <figure>
+          <img
+            className={styles[`centered_image_with_table`]}
+            src={edit_kerstin}
+            alt="Edit and Kerstin"
+          />
+          <figcaption>Roboten JompAï och sina kompisar</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            className={styles[`centered_image_with_table`]}
+            src={everyone}
+            alt="Almost everyone hanging out together"
+          />
+          <figcaption>Talangfulla mammor och dottrar </figcaption>
+        </figure>
       </div>
 
       <p>
-        Här hittar du (snart) alla program som Tellus Kodare gjorde med
-        respektive datum!
+        Här hittar du några program som Tellus Kodare gjorde med respektive
+        datum!
       </p>
       <p>
         Vi följer boken{" "}

@@ -20,7 +20,7 @@ category: "Embedded"
 The WrongAnswer staff (myself) has been absent for a while on that blog. It has been busy at school, mostly with a really fun course called Computer Organisation and Hardware Engineering.
 
 My lab partner Johanna Löv and myself are now almost ready to present our project, which is an obstacle avoiding robot.
-We are using a chipKIT™ Uno32™ Board, a PIC32MX320F128H processor, a L298 motor driver, a HC-SR04 sensor and an accelerometer to detect if it has been picked up :car:.
+We are using a chipKIT™ Uno32™ Board, a PIC32MX320F128H processor, a L298 motor driver, a HC-SR04 sensor and an accelerometer (MPU6050) to detect if it has been picked up :car:.
 
 `youtube: https://youtu.be/2tecXFYZkzA`
 
