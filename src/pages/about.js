@@ -25,8 +25,8 @@ export default ({ data }) => (
 
       <h3>What is that all about?</h3>
       <p>
-        This blog is a collection of solutions to competitive programming
-        problems from different judges online, mostly
+        This blog has some solutions to competitive programming problems from
+        different judges online, mostly
         <a href="www.kattis.com"> kattis</a>.
       </p>
 
@@ -36,21 +36,14 @@ export default ({ data }) => (
         Goodness!). Competitive programming is just a way to learn programming
         and have fun.
       </p>
-      <h3>Why competitive programming?</h3>
+
       <p>
-        It is an amazing way to learn. You are given a problem, and you must
-        translate it into programming concepts and datastructures. You see
-        immediately if you understood correctly, because if not ... well, it's
-        just wrong answer!
+        There is also activities I do with kids at the Tellus Programming Club,
+        and other school projects.
       </p>
-      <p>
-        Solutions are usually very short and straightforward (I did not say
-        simple!), so you don't need to design a whole program with lots of
-        classes to get things done. Just the core stuff.
-      </p>
-      <p>The kick of getting it right is the best feeling in the world!</p>
+
       <h3>
-        ... And what is Tellus?
+        And what is Tellus?
         {` `}{" "}
         <span role="img" aria-label="girl" className={styles[`emo`]}>
           👧
@@ -65,22 +58,6 @@ export default ({ data }) => (
         Tellus is a programming club in Midsommarkransen that I started in
         September 2019. We learn to code in Python.
         <Link to={`/index_tellus`}> Check our activities here!</Link>
-      </p>
-      <h3>About this site</h3>
-      <p>
-        This blog is made with Gatsby. I wanted something fast, minimal and
-        easy, so I considered WordPress. But my friend advised against it (...
-        <i>
-          "wordpress is a monster of possible mistakes layered on top of each
-          other!"
-        </i>{" "}
-        were his exact words.)
-      </p>
-      <p>
-        I really don't regret Gatsby. It's fast, it has hot reload, and the
-        community is great. Problem is:{" "}
-        <strong>the learning curve is steep. And downwards sometimes! </strong>
-        So expect some agressive maintenance/upgrading along the ride.
       </p>
 
       <h3>About me</h3>
