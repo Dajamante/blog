@@ -11,64 +11,58 @@ export default ({ data }) => (
       <div>
         <h3 className={styles[`tellus__titel`]}>Tellus Programmeringklubb</h3>
         <p>
-          Tellus is a programming club for girls (and their moms) that I started
-          in September 2019. All the information below is in Swedish!
+          Tellus is a programming club for girls (and their moms) started in
+          September 2019. We meet once a week and do fun things together with
+          Python (at the moment{" "}
+          <span role="img" aria-label="sweden">
+            {" "}
+            🐍💻
+          </span>
+          ).{" "}
+        </p>
+        <p>
+          All the information below is in Swedish!
           <span role="img" aria-label="sweden">
             {" "}
             🇸🇪
           </span>
         </p>
-
-        <figure>
-          <img
-            className={styles[`centered_image_with_table`]}
-            src={edit_kerstin}
-            alt="Edit and Kerstin"
-          />
-          <figcaption>Roboten JompAï och sina kompisar</figcaption>
-        </figure>
-
-        <figure>
-          <img
-            className={styles[`centered_image_with_table`]}
-            src={everyone}
-            alt="Almost everyone hanging out together"
-          />
-          <figcaption>Talangfulla mammor och dottrar </figcaption>
-        </figure>
-      </div>
-
-      <p>
-        Här hittar du några program som Tellus Kodare gjorde med respektive
-        datum!
-      </p>
-      <p>
-        Vi följer boken{" "}
-        <a href="https://www.bokus.com/bok/9789177797128/programmering-for-nyborjare-med-python/">
-          Programmering för Nybörjare med Python
-        </a>{" "}
-        och{" "}
-        <a href="https://nostarch.com/pythoncrashcourse2e">
-          Python Crash Course.
-        </a>
-      </p>
-
-      <h4>{data.allMarkdownRemark.totalCount} Tellus Kodare aktiviteter</h4>
-      {data.allMarkdownRemark.edges.map(({ node }) => (
-        <div key={node.id}>
-          <Link to={node.fields.slug}>
-            <p>
-              {node.frontmatter.title} - {node.frontmatter.date}
-            </p>
-          </Link>
+        <div className={styles[`participant_picture`]}>
+          <img src={edit_kerstin} alt="Edit and Kerstin" />
+          <img src={everyone} alt="Almost everyone hanging out together" />
         </div>
-      ))}
-      <p>
-        {" "}
-        <Link to={`/`}>Tillbaka </Link>
-      </p>
+      </div>
+      <div>
+        <p>
+          Här hittar du några program som Tellus Kodare gjorde med respektive
+          datum!
+        </p>
+        <p>
+          Vi följer boken{" "}
+          <a href="https://www.bokus.com/bok/9789177797128/programmering-for-nyborjare-med-python/">
+            Programmering för Nybörjare med Python
+          </a>{" "}
+          och{" "}
+          <a href="https://nostarch.com/pythoncrashcourse2e">
+            Python Crash Course.
+          </a>
+        </p>
 
-      <br />
+        <h4>{data.allMarkdownRemark.totalCount} Aktiviteter</h4>
+        {data.allMarkdownRemark.edges.map(({ node }) => (
+          <div key={node.id}>
+            <Link to={node.fields.slug}>
+              <p>
+                {node.frontmatter.title} - {node.frontmatter.date}
+              </p>
+            </Link>
+          </div>
+        ))}
+        <p>
+          {" "}
+          <Link to={`/`}>Tillbaka </Link>
+        </p>
+      </div>
     </Layout>
   </div>
 )

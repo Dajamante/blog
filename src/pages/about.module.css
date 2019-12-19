@@ -34,11 +34,14 @@ h4 {
   margin-bottom: 10%;
 }
 
-.centered_image_with_table {
-  margin-top: 3%;
-  margin-bottom: 1%;
+.participant_picture img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 20px;
+  margin: 0 auto;
   width: 60%;
+}
+
+.participant_picture figcaption {
+  margin-top: 0%;
+  margin-bottom: 5%;
 }
