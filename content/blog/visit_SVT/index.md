@@ -1,8 +1,8 @@
 ---
-title: Tellus Programmeringklubb hos SVT
+title: SVT
 date: "2019-12-20"
 description: "Besök på SVT"
-tags: ["tellus", "inspiration"]
+tags: ["tellus", "inspiration", "Bolibompa"]
 category: "Tellus"
 image: "./progclub.png"
 ---

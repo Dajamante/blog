@@ -15,7 +15,7 @@ h4 {
 }
 
 .tellus__titel {
-  display: inline-block;
+  display: inline-flexbox;
   font-family: "VT323", monospace;
   font-size: 2em;
   font-stretch: ultra-expanded;
@@ -38,10 +38,15 @@ h4 {
   display: block;
   padding: 20px;
   margin: 0 auto;
-  width: 60%;
+  width: 50%;
 }
 
 .participant_picture figcaption {
   margin-top: 0%;
   margin-bottom: 5%;
+}
+
+.drakeget_picture {
+  display: inline-flex;
+  width: 20%;
 }

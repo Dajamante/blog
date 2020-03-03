@@ -2,33 +2,35 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import styles from "./about.module.css"
-import edit_kerstin from "../images/editetkerstin.jpg"
-import everyone from "../images/ttlemonde.jpg"
+//import edit_kerstin from "../images/editetkerstin.jpg"
+import drakeget from "../images/drakeget.png"
+import everyone from "../images/ttlemonde2.png"
+import editobil from "../images/editobil.jpg"
 
 export default ({ data }) => (
   <div>
     <Layout>
       <div>
-        <h3 className={styles[`tellus__titel`]}>Tellus Programmeringklubb</h3>
+        <h3 className={styles[`tellus__titel`]}>
+          Tellus{" "}
+          <div className={styles[`drakeget_picture`]}>
+            <img src={drakeget} alt="Drake-geten" />
+          </div>{" "}
+          Programmeringklubb
+        </h3>
         <p>
-          Tellus is a programming club for girls (and their moms) started in
-          September 2019. We meet once a week and do fun things together with
-          Python (at the moment{" "}
-          <span role="img" aria-label="sweden">
-            {" "}
-            🐍💻
-          </span>
-          ).{" "}
+          Tellus är en programmeringklubb för mammor och dottrar, som startades
+          i september 2019. Vi träffas en gång i veckan och gör roliga saker, i
+          Python och C just nu. Drakegeten är en donation av Edit, vår yngsta
+          medlem. Hon behåller alla rättigheter till den (det?)!
         </p>
-        <p>
-          All the information below is in Swedish!
-          <span role="img" aria-label="sweden">
-            {" "}
-            🇸🇪
-          </span>
-        </p>
+
         <div className={styles[`participant_picture`]}>
+          {/*
           <img src={edit_kerstin} alt="Edit and Kerstin" />
+          <img src={editobil} alt="Edit och JompAiroboten" />
+          */}
+
           <img src={everyone} alt="Almost everyone hanging out together" />
         </div>
       </div>
@@ -38,14 +40,15 @@ export default ({ data }) => (
           datum!
         </p>
         <p>
-          Vi följer boken{" "}
+          För Python har vi följt boker{" "}
           <a href="https://www.bokus.com/bok/9789177797128/programmering-for-nyborjare-med-python/">
             Programmering för Nybörjare med Python
           </a>{" "}
           och{" "}
           <a href="https://nostarch.com/pythoncrashcourse2e">
             Python Crash Course.
-          </a>
+          </a>{" "}
+          2020 kör vi Arduino och bygger robotar!
         </p>
 
         <h4>{data.allMarkdownRemark.totalCount} Aktiviteter</h4>
