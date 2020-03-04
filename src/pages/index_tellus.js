@@ -37,10 +37,6 @@ export default ({ data }) => (
       </div>
       <div>
         <p>
-          Här hittar du några program som Tellus Kodare gjorde med respektive
-          datum!
-        </p>
-        <p>
           För Python har vi följt boker{" "}
           <a href="https://www.bokus.com/bok/9789177797128/programmering-for-nyborjare-med-python/">
             Programmering för Nybörjare med Python
@@ -48,7 +44,8 @@ export default ({ data }) => (
           och{" "}
           <a href="https://nostarch.com/pythoncrashcourse2e">
             Python Crash Course.
-          </a>{" "}
+          </a>
+          {`\n`}
           2020 kör vi Arduino och bygger robotar!
         </p>
         <div className={styles[`participant_picture`]}>
