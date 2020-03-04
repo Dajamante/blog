@@ -5,6 +5,7 @@ import styles from "./about.module.css"
 //import edit_kerstin from "../images/editetkerstin.jpg"
 import drakeget from "../images/drakeget.png"
 import everyone from "../images/ttlemonde2.png"
+import everyone2 from "../images/mojanggrup.jpg"
 import editobil from "../images/editobil.jpg"
 
 export default ({ data }) => (
@@ -50,7 +51,9 @@ export default ({ data }) => (
           </a>{" "}
           2020 kör vi Arduino och bygger robotar!
         </p>
-
+        <div className={styles[`participant_picture`]}>
+          <img src={everyone2} alt="Nästan alla och lite till." />
+        </div>
         <h4>{data.allMarkdownRemark.totalCount} Aktiviteter</h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
@@ -61,6 +64,7 @@ export default ({ data }) => (
             </Link>
           </div>
         ))}
+
         <p>
           {" "}
           <Link to={`/`}>Tillbaka </Link>
