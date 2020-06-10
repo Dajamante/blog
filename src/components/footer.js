@@ -22,21 +22,7 @@ class Footer extends React.Component {
           bottom: 0,
         }}
       >
-        © {new Date().getFullYear()}, (Gatsby + Perseverance - anyExperience{" "}
-        <span role="img" aria-label="sad">
-          😢
-        </span>{" "}
-        )&nbsp;
-        <FaEquals /> &nbsp;
-        <span role="img" aria-label="sparkle">
-          ✨
-        </span>
-        thisBlog{" "}
-        <span role="img" aria-label="sparkle">
-          ✨
-        </span>
-        &nbsp; &nbsp;
-        {` `}
+        © {new Date().getFullYear()} &nbsp; &nbsp; Contact me on :{` `}
         <a
           href="https://github.com/Dajamante/"
           className={styles[`footer__icon`]}
