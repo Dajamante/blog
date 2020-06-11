@@ -47,10 +47,7 @@ const Header = () => {
             </div>
           </Link>
           <Link to={`/index_tellus`} className={styles[`header__link`]}>
-            <div className={`${styles.hidden_text} ${styles.sparkling_tellus}`}>
-              {" "}
-              Tellus{" "}
-            </div>
+            <div className={`${styles.hidden_text} `}> Tellus </div>
             <div
               className={`${styles.hidden_python} ${styles.sparkling_tellus}`}
             >

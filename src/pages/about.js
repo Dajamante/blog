@@ -27,7 +27,9 @@ export default ({ data }) => (
       <p>
         This blog has some solutions to competitive programming problems from
         different judges online, mostly
-        <a href="www.kattis.com"> kattis</a>.
+        <a href="www.kattis.com"> kattis</a>. Many
+        <a href="https://github.com/Dajamante"> solutions </a> are on github, so
+        don't hesitate to have a look there!
       </p>
 
       <p>
