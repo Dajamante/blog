@@ -10,7 +10,7 @@ module.exports = {
       nickname: `DaJa`,
     },
     description: `Collection of programming puzzles gone wrong`,
-    siteUrl: `https://wronganswer.netlify.com/`,
+    siteUrl: `https://wronganswer.blog/`,
     social: {
       twitter: `ai_maiga`,
     },
@@ -35,6 +35,12 @@ module.exports = {
       options: {
         path: `${__dirname}/content/assets`,
         name: `assets`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `wronganswer-netlify-com`,
       },
     },
     {
