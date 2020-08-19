@@ -5325,7 +5325,7 @@
       "resolved": "https://registry.npmjs.org/configstore/-/configstore-3.1.2.tgz",
       "integrity": "sha512-vtv5HtGjcYUgFrXc6Kx747B83MRRVS5R1VTEQoXvuP+kMI+if6uywV0nDGoiydJRy4yk7h9od5Og0kxx4zUXmw==",
       "requires": {
-        "dot-prop": "^4.1.0",
+        "dot-prop": "^4.2.0",
         "graceful-fs": "^4.1.2",
         "make-dir": "^1.0.0",
         "unique-string": "^1.0.0",
@@ -14497,7 +14497,7 @@
           "version": "3.1.2",
           "bundled": true,
           "requires": {
-            "dot-prop": "^4.1.0",
+            "dot-prop": "^4.2.0",
             "graceful-fs": "^4.1.2",
             "make-dir": "^1.0.0",
             "unique-string": "^1.0.0",
@@ -18377,7 +18377,7 @@
           "resolved": "https://registry.npmjs.org/postcss-selector-parser/-/postcss-selector-parser-3.1.1.tgz",
           "integrity": "sha1-T4dfSvsMllc9XPTXQBGu4lCn6GU=",
           "requires": {
-            "dot-prop": "^4.1.1",
+            "dot-prop": "^4.2.1",
             "indexes-of": "^1.0.1",
             "uniq": "^1.0.1"
           }
@@ -18492,7 +18492,7 @@
           "resolved": "https://registry.npmjs.org/postcss-selector-parser/-/postcss-selector-parser-3.1.1.tgz",
           "integrity": "sha1-T4dfSvsMllc9XPTXQBGu4lCn6GU=",
           "requires": {
-            "dot-prop": "^4.1.1",
+            "dot-prop": "^4.2.1",
             "indexes-of": "^1.0.1",
             "uniq": "^1.0.1"
           }
@@ -21681,7 +21681,7 @@
           "resolved": "https://registry.npmjs.org/postcss-selector-parser/-/postcss-selector-parser-3.1.1.tgz",
           "integrity": "sha1-T4dfSvsMllc9XPTXQBGu4lCn6GU=",
           "requires": {
-            "dot-prop": "^4.1.1",
+            "dot-prop": "^4.2.1",
             "indexes-of": "^1.0.1",
             "uniq": "^1.0.1"
           }
@@ -22621,7 +22621,7 @@
           "resolved": "https://registry.npmjs.org/configstore/-/configstore-4.0.0.tgz",
           "integrity": "sha512-CmquAXFBocrzaSM8mtGPMM/HiWmyIpr4CcJl/rgY2uCObZ/S7cKU0silxslqJejl+t/T9HS8E0PUNQD81JGUEQ==",
           "requires": {
-            "dot-prop": "^4.1.0",
+            "dot-prop": "^4.2.0",
             "graceful-fs": "^4.1.2",
             "make-dir": "^1.0.0",
             "unique-string": "^1.0.0",
