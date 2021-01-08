@@ -71,19 +71,6 @@ module.exports = {
             },
           },
           {
-            resolve: `gatsby-remark-vscode`,
-            // All options are optional. Defaults shown here.
-            options: {
-              colorTheme: "Dark+ (default dark)",
-              wrapperClassName: "pre",
-              injectStyles: true,
-              extensions: [],
-              replaceColor: x => x,
-              extensionDataDirectory: path.resolve("extensions"),
-              logLevel: "error", // Set to 'warn' to debug if something looks wrong
-            },
-          },
-          {
             resolve: "gatsby-remark-emojis",
             options: {
               active: true,
