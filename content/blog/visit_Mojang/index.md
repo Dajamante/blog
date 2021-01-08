@@ -4,7 +4,7 @@ date: "2020-02-26"
 description: "Hur skapar man Minecraft karaktär?"
 tags: ["tellus", "inspiration", "Agnes Larsson"]
 category: "Tellus"
-image: ["./helagruppen.jpg", "agnes.jpg", "editoviola.jpg", "drakeget.jpg"]
+image: ["helagruppen.jpg", "agnes.jpg", "editoviola.jpg", "drakeget.jpg"]
 ---
 
 ### Mojang besök med Agnes Larsson
